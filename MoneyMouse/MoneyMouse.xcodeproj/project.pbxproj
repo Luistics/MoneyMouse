@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
+		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
+		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
+		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
 		DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */; };
-		DE0CF51A21AE2FF500C249B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51921AE2FF500C249B7 /* ViewController.swift */; };
+		DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */; };
 		DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF51B21AE2FF500C249B7 /* Main.storyboard */; };
 		DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */; };
 		DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52121AE2FF600C249B7 /* Assets.xcassets */; };
 		DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */; };
 		DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */; };
 		DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */; };
+		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
+		15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
+		3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE0CF51921AE2FF500C249B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DE0CF51C21AE2FF500C249B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE0CF51F21AE2FF500C249B7 /* MoneyMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyMouse.xcdatamodel; sourceTree = "<group>"; };
 		DE0CF52121AE2FF600C249B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +64,7 @@
 		DE0CF53621AE2FF600C249B7 /* MoneyMouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseUITests.swift; sourceTree = "<group>"; };
 		DE0CF53C21AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59D1003A21AE3BEE00FF3383 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
+				DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
+				59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
+				59D1003821AE3B8100FF3383 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59D1003B21AE3C1600FF3383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
+				DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D316FB92C70DE8FA780FA5C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */,
+				152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */,
+				C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */,
+				15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */,
+				04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */,
+				609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
+				F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
+				6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE0CF50B21AE2FF500C249B7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +145,8 @@
 				DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */,
 				DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */,
 				DE0CF51521AE2FF500C249B7 /* Products */,
+				D316FB92C70DE8FA780FA5C0 /* Pods */,
+				DDE2D1A31833B2FFAED48690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +163,9 @@
 		DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
 			isa = PBXGroup;
 			children = (
-				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
-				DE0CF51921AE2FF500C249B7 /* ViewController.swift */,
-				DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
+				59D1003B21AE3C1600FF3383 /* View */,
+				59D1003A21AE3BEE00FF3383 /* Controller */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
-				DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
 				DE0CF52621AE2FF600C249B7 /* Info.plist */,
 				DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */,
 			);
@@ -135,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE0CF53F21AE2FF600C249B7 /* Build configuration list for PBXNativeTarget "MoneyMouse" */;
 			buildPhases = (
+				7238E06782EC1ADA990002AE /* [CP] Check Pods Manifest.lock */,
 				DE0CF51021AE2FF500C249B7 /* Sources */,
 				DE0CF51121AE2FF500C249B7 /* Frameworks */,
 				DE0CF51221AE2FF500C249B7 /* Resources */,
+				91BB06B78F6C22D7D35D9392 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE0CF54221AE2FF600C249B7 /* Build configuration list for PBXNativeTarget "MoneyMouseTests" */;
 			buildPhases = (
+				050D54771C9F0CF002113415 /* [CP] Check Pods Manifest.lock */,
 				DE0CF52721AE2FF600C249B7 /* Sources */,
 				DE0CF52821AE2FF600C249B7 /* Frameworks */,
 				DE0CF52921AE2FF600C249B7 /* Resources */,
@@ -170,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE0CF54521AE2FF600C249B7 /* Build configuration list for PBXNativeTarget "MoneyMouseUITests" */;
 			buildPhases = (
+				D18471E0379F94658070D255 /* [CP] Check Pods Manifest.lock */,
 				DE0CF53221AE2FF600C249B7 /* Sources */,
 				DE0CF53321AE2FF600C249B7 /* Frameworks */,
 				DE0CF53421AE2FF600C249B7 /* Resources */,
@@ -254,13 +320,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		050D54771C9F0CF002113415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyMouseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7238E06782EC1ADA990002AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyMouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BB06B78F6C22D7D35D9392 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18471E0379F94658070D255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyMouseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE0CF51021AE2FF500C249B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
+				59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
 				DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
-				DE0CF51A21AE2FF500C249B7 /* ViewController.swift in Sources */,
+				DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
 				DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +597,7 @@
 		};
 		DE0CF54021AE2FF600C249B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +615,7 @@
 		};
 		DE0CF54121AE2FF600C249B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +633,7 @@
 		};
 		DE0CF54321AE2FF600C249B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +654,7 @@
 		};
 		DE0CF54421AE2FF600C249B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +675,7 @@
 		};
 		DE0CF54621AE2FF600C249B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +695,7 @@
 		};
 		DE0CF54721AE2FF600C249B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
