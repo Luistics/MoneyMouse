@@ -179,6 +179,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="rSw-Rr-eSZ" eventType="touchUpInside" id="b33-Sh-RHU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRY-7z-GGV">
                                 <rect key="frame" x="87" y="318" width="200" height="30"/>
@@ -192,7 +195,10 @@
                         <viewLayoutGuide key="safeArea" id="Wc5-vt-56E"/>
                     </view>
                     <connections>
-                        <segue destination="dbG-oc-ggp" kind="presentation" id="eV5-iJ-Nxg"/>
+                        <outlet property="email" destination="9jV-jD-ohR" id="T2O-lH-XW1"/>
+                        <outlet property="loginButton" destination="1WG-W9-ExT" id="i81-xd-weX"/>
+                        <outlet property="password" destination="TRY-7z-GGV" id="oI2-dF-4qV"/>
+                        <segue destination="dbG-oc-ggp" kind="presentation" identifier="loginToHome" id="eV5-iJ-Nxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLE-eI-WSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
