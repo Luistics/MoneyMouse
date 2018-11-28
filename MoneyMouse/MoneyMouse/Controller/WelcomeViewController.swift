@@ -1,25 +1,34 @@
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  MoneyMouse
 //
-//  Created by Luis Olivar on 11/27/18.
+//  Created by Luis Olivar on 11/28/18.
 //  Copyright © 2018 edu.nyu. All rights reserved.
 //
 
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        
-        //If there is a logged in user, by pass this screen and go straight to Main ViewController
-        
-        
+        // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
-
