@@ -48,6 +48,7 @@ playground.xcworkspace
 #
 # Pods/
 GoogleService-Info.plist
+MoneyMouse/MoneyMouse/GoogleService-Info.plist
 
 # Carthage
 #
