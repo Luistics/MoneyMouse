@@ -22,6 +22,12 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func logInAction(_ sender: Any) {
+        performSegue(withIdentifier: "logIn", sender: self)
+    }
+    @IBAction func signUpAction(_ sender: Any) {
+        performSegue(withIdentifier: "signUp", sender: self)
+    }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         if Auth.auth().currentUser != nil {
