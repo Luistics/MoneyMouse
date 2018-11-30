@@ -143,10 +143,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-ae-uiw">
+                                <rect key="frame" x="159" y="145" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="logOutAction:" destination="dbG-oc-ggp" eventType="touchUpInside" id="Owl-Mj-8q0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aJd-RG-Evc"/>
                     </view>
+                    <connections>
+                        <outlet property="logOutButton" destination="aiP-ae-uiw" id="EMO-6x-6nH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FqJ-R3-MhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,6 +218,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eV5-iJ-Nxg"/>
+        <segue reference="ASn-zp-EkL"/>
     </inferredMetricsTieBreakers>
 </document>
