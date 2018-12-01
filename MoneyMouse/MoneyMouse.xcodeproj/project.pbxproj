@@ -20,7 +20,7 @@
 		DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */; };
 		DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */; };
 		DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */; };
-		DEC8DA4D21AEFD9500E79F91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEC8DA4C21AEFD9500E79F91 /* GoogleService-Info.plist */; };
+		E223BB1F21B204E2002F5621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */; };
 		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +67,7 @@
 		DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseUITests.swift; sourceTree = "<group>"; };
 		DE0CF53C21AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		DEC8DA4C21AEFD9500E79F91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,7 +168,7 @@
 		DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
 			isa = PBXGroup;
 			children = (
-				DEC8DA4C21AEFD9500E79F91 /* GoogleService-Info.plist */,
+				E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */,
 				59D1003B21AE3C1600FF3383 /* View */,
 				59D1003A21AE3BEE00FF3383 /* Controller */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
@@ -305,7 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
-				DEC8DA4D21AEFD9500E79F91 /* GoogleService-Info.plist in Resources */,
+				E223BB1F21B204E2002F5621 /* GoogleService-Info.plist in Resources */,
 				DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
 				DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
 			);
