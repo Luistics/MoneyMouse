@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import Charts
 
 class HomeScreenViewController: UIViewController {
 

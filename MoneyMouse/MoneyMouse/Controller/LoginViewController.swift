@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
                 alertController.addAction(defaultAction)
+                alertController.view.layoutIfNeeded() 
                 self.present(alertController, animated: true, completion: nil)
             }
         }

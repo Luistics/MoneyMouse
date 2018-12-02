@@ -37,7 +37,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="x3K-UE-hoH"/>
+                        <viewLayoutGuide key="safeArea" id="NdV-qD-crF"/>
                     </view>
                     <navigationItem key="navigationItem" id="eu3-5d-5ih"/>
                     <connections>
@@ -99,7 +99,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="KF3-67-ZfE"/>
+                        <viewLayoutGuide key="safeArea" id="cMv-Yy-9u8"/>
                     </view>
                     <connections>
                         <outlet property="email" destination="lXI-Tm-XeT" id="RuH-LR-dfZ"/>
@@ -130,15 +130,24 @@
             </objects>
             <point key="canvasLocation" x="-226.40000000000001" y="-215.44227886056973"/>
         </scene>
-        <!--View Controller-->
+        <!--Charts View Controller-->
         <scene sceneID="Ran-e4-HDV">
             <objects>
-                <viewController id="ASC-al-2L0" sceneMemberID="viewController">
+                <viewController id="ASC-al-2L0" customClass="ChartsViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Isd-wb-QOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Expense Charts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-Ba-zBe">
+                                <rect key="frame" x="103" y="47" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ujf-Ve-NNt"/>
+                        <viewLayoutGuide key="safeArea" id="BsP-w8-22h"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="ZID-EA-p5E"/>
                 </viewController>
@@ -149,21 +158,35 @@
         <!--Home Screen View Controller-->
         <scene sceneID="wlN-TV-hBL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FqJ-R3-MhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dbG-oc-ggp" customClass="HomeScreenViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C4C-Ob-JqK" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2q-vp-Esx">
-                                <rect key="frame" x="166" y="41" width="46" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-t2-tIP">
+                                <rect key="frame" x="16" y="20" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-80-AlR">
+                                <rect key="frame" x="0.0" y="106" width="375" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="i8s-aS-JIA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i8s-aS-JIA" id="gWb-YC-sqG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-ae-uiw">
-                                <rect key="frame" x="310" y="22" width="49" height="27"/>
+                                <rect key="frame" x="310" y="17" width="49" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Sign Out"/>
@@ -171,16 +194,9 @@
                                     <action selector="logOutAction:" destination="dbG-oc-ggp" eventType="touchUpInside" id="Owl-Mj-8q0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-t2-tIP">
-                                <rect key="frame" x="16" y="25" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aJd-RG-Evc"/>
+                        <viewLayoutGuide key="safeArea" id="BK4-8Y-QjM"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="zZJ-aV-Ild"/>
                     <connections>
@@ -188,18 +204,28 @@
                         <outlet property="logOutButton" destination="aiP-ae-uiw" id="EMO-6x-6nH"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqJ-R3-MhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4380" y="-936"/>
+            <point key="canvasLocation" x="4380" y="-936.88155922038993"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Entry View Controller-->
         <scene sceneID="egr-nU-4qb">
             <objects>
-                <viewController id="PiE-el-bOa" sceneMemberID="viewController">
+                <viewController id="PiE-el-bOa" customClass="AddEntryViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g1r-Ec-mOh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a budget goal or expense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDA-YU-8Qk">
+                                <rect key="frame" x="73" y="59" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Hk3-cT-8i5"/>
+                        <viewLayoutGuide key="safeArea" id="diU-Mt-fPV"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="sXT-aF-qxy"/>
                 </viewController>
@@ -247,7 +273,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Wc5-vt-56E"/>
+                        <viewLayoutGuide key="safeArea" id="E46-rq-yt4"/>
                     </view>
                     <connections>
                         <outlet property="email" destination="9jV-jD-ohR" id="T2O-lH-XW1"/>
@@ -266,6 +292,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TOS-1Y-dLZ" customClass="MainTabBarController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tKT-LV-UYo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -281,6 +308,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ASn-zp-EkL"/>
+        <segue reference="5gf-D4-fNj"/>
     </inferredMetricsTieBreakers>
 </document>

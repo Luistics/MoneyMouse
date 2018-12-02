@@ -28,6 +28,7 @@ class RegisterViewController: UIViewController {
             let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
+            alertController.view.layoutIfNeeded()
             self.present(alertController, animated: true, completion: nil)
         }
         
@@ -41,6 +42,7 @@ class RegisterViewController: UIViewController {
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     
                     alertController.addAction(defaultAction)
+                    alertController.view.layoutIfNeeded() 
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
