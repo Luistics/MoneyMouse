@@ -10,14 +10,23 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class AddBudgetViewController: UIViewController {
+class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+
+    let budgetGoalArray = ["Travel","Transportaion", "Living" , "Other"];
+    var budgetSelected = "";
+    
+
+    @IBOutlet weak var budgetPicker: UIPickerView!
+    
+    @IBOutlet weak var budgetLabel: UILabel!
 
     let ref = Database.database().reference(withPath: "budgets")
     let userEmail = Auth.auth().currentUser?.email;
     
-    @IBOutlet weak var typeOfBudget: UITextField!
     @IBOutlet weak var budgetAmount: UITextField!
     //titleOfBudget
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +35,24 @@ class AddBudgetViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+        budgetPicker.delegate = self;
+        budgetPicker.dataSource = self;
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return budgetGoalArray.count;
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return budgetGoalArray[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(budgetGoalArray[row])
+        budgetSelected = budgetGoalArray[row]
+        UpdateData()
     }
     
     @IBAction func addBudgetPressed(_ sender: Any) {
@@ -40,6 +67,8 @@ class AddBudgetViewController: UIViewController {
                                     completed: false)
         
         self.ref.setValue(budgetGoal.toAnyObject())
+    func UpdateData(){
+        budgetLabel.text = budgetSelected;
     }
     
     /*
