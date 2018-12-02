@@ -105,7 +105,7 @@
                         <outlet property="email" destination="lXI-Tm-XeT" id="RuH-LR-dfZ"/>
                         <outlet property="passwordCheckField" destination="xnx-un-Mm6" id="7yJ-bi-cjB"/>
                         <outlet property="passwordField" destination="8BL-AV-2Vj" id="11l-nB-Y63"/>
-                        <segue destination="TOS-1Y-dLZ" kind="presentation" id="5gf-D4-fNj"/>
+                        <segue destination="TOS-1Y-dLZ" kind="presentation" identifier="signUpToHome" id="5gf-D4-fNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh1-ja-2M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -389,8 +389,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="dbG-oc-ggp" kind="relationship" relationship="viewControllers" id="MPL-zq-j88"/>
-                        <segue destination="ASC-al-2L0" kind="relationship" relationship="viewControllers" id="tCh-Kr-7ZT"/>
                         <segue destination="L3h-0w-Hi9" kind="relationship" relationship="viewControllers" id="xWs-p8-ra4"/>
+                        <segue destination="ASC-al-2L0" kind="relationship" relationship="viewControllers" id="tCh-Kr-7ZT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAd-j0-eij" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,6 +418,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5gf-D4-fNj"/>
+        <segue reference="eV5-iJ-Nxg"/>
     </inferredMetricsTieBreakers>
 </document>
