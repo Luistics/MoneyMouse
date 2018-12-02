@@ -8,6 +8,7 @@ target 'MoneyMouse' do
   # Pods for MoneyMouse
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 
   target 'MoneyMouseTests' do
     inherit! :search_paths

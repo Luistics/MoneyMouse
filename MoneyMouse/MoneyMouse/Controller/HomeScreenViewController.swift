@@ -8,13 +8,20 @@
 
 import UIKit
 import FirebaseAuth
-import Firebase
+import FirebaseDatabase
 
 class HomeScreenViewController: UIViewController {
 
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var logOutButton: UIButton!
+    
+    let ref = Database.database().reference(withPath: "budgets");
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userEmail = Auth.auth().currentUser?.email;
+        emailLabel.text = userEmail;
 
         // Do any additional setup after loading the view.
     }
