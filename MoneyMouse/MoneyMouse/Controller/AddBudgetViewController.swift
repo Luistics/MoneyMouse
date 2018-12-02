@@ -7,16 +7,41 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class AddBudgetViewController: UIViewController {
 
+    let ref = Database.database().reference(withPath: "budgets")
+    let userEmail = Auth.auth().currentUser?.email;
+    
+    @IBOutlet weak var typeOfBudget: UITextField!
+    @IBOutlet weak var budgetAmount: UITextField!
+    //titleOfBudget
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addBudgetPressed(_ sender: Any) {
+        
+        guard let text = budgetAmount.text, let number = Float(text) else {
+            return
+        }
+        let budgetGoal = BudgetGoal(amount: number,
+                                    title:"BudgetTest",
+                                    category: typeOfBudget.text!,
+                                    addedByUser: self.userEmail!,
+                                    completed: false)
+        
+        self.ref.setValue(budgetGoal.toAnyObject())
+    }
+    
     /*
     // MARK: - Navigation
 
