@@ -29,10 +29,6 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
 
         // Do any additional setup after loading the view.
         budgetPicker.delegate = self;
@@ -62,11 +58,13 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
         let budgetGoal = BudgetGoal(amount: number,
                                     title:"BudgetTest",
-                                    category: typeOfBudget.text!,
+                                    category: budgetLabel.text!,
                                     addedByUser: self.userEmail!,
                                     completed: false)
         
         self.ref.setValue(budgetGoal.toAnyObject())
+    }
+    
     func UpdateData(){
         budgetLabel.text = budgetSelected;
     }
