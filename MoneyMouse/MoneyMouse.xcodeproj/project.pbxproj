@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
+		59C3D3EB21B48BC600DF51FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */; };
 		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
 		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
 		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
@@ -22,7 +23,6 @@
 		DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */; };
 		DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */; };
 		DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */; };
-		E223BB1F21B204E2002F5621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */; };
 		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +48,7 @@
 		152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
 		15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
 		3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 		DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,7 +174,7 @@
 		DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
 			isa = PBXGroup;
 			children = (
-				E223BB1E21B204E2002F5621 /* GoogleService-Info.plist */,
+				59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */,
 				59D1003B21AE3C1600FF3383 /* View */,
 				59D1003A21AE3BEE00FF3383 /* Controller */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
@@ -311,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
-				E223BB1F21B204E2002F5621 /* GoogleService-Info.plist in Resources */,
+				59C3D3EB21B48BC600DF51FF /* GoogleService-Info.plist in Resources */,
 				DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
 				DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
 			);
