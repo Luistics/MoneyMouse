@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import Charts
+import ChameleonFramework
 
 class BudgetProgressTableViewCell: UITableViewCell{
     
@@ -28,6 +29,9 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.view.backgroundColor = UIColor.flatBlue()
         
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let userID = Auth.auth().currentUser!.uid;

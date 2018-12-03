@@ -10,6 +10,7 @@ target 'MoneyMouse' do
 	pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Charts'
+    pod 'ChameleonFramework'
 
   target 'MoneyMouseTests' do
     inherit! :search_paths

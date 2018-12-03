@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,6 +35,10 @@
                                     <action selector="signUpAction:" destination="fer-Qx-Nnv" eventType="touchUpInside" id="Tu9-n8-NJa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1wa-li-45e">
+                                <rect key="frame" x="80" y="140" width="215" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NdV-qD-crF"/>
@@ -50,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFE-35-x0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="-215"/>
+            <point key="canvasLocation" x="544.79999999999995" y="-215.44227886056973"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="1mz-ud-VJK">
@@ -246,7 +250,9 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vqq-V6-Q3d">
                                 <rect key="frame" x="16" y="7" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+ (add budget)"/>
+                                <state key="normal" title="+ (add budget)">
+                                    <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addBudgetTapped:" destination="6sC-kf-rF9" eventType="touchUpInside" id="4L1-8i-Tr5"/>
                                 </connections>
@@ -256,7 +262,9 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wwb-KO-Bkc">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Out"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="signOutAction:" destination="6sC-kf-rF9" eventType="touchUpInside" id="9zI-wP-9eb"/>
                                 </connections>
@@ -270,81 +278,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hy9-yh-aUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6208.8000000000002" y="-1744.6776611694154"/>
-        </scene>
-        <!--Home Screen View Controller-->
-        <scene sceneID="wlN-TV-hBL">
-            <objects>
-                <viewController id="dbG-oc-ggp" customClass="HomeScreenViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C4C-Ob-JqK" customClass="View">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-80-AlR">
-                                <rect key="frame" x="0.0" y="153" width="375" height="465"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BudgetCell" id="i8s-aS-JIA" customClass="BudgetCell" customModule="MoneyMouse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i8s-aS-JIA" id="gWb-YC-sqG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkG-Cw-R3R">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="12"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="NkG-Cw-R3R" secondAttribute="bottom" constant="31.5" id="MjA-Wl-eos"/>
-                                                <constraint firstItem="NkG-Cw-R3R" firstAttribute="top" secondItem="gWb-YC-sqG" secondAttribute="top" id="QJM-8t-e2l"/>
-                                                <constraint firstAttribute="trailing" secondItem="NkG-Cw-R3R" secondAttribute="trailing" constant="8" id="y5Y-st-Nnf"/>
-                                                <constraint firstItem="NkG-Cw-R3R" firstAttribute="leading" secondItem="gWb-YC-sqG" secondAttribute="leading" constant="8" id="zne-C9-aKN"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-ae-uiw">
-                                <rect key="frame" x="310" y="73" width="49" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="logOutAction:" destination="dbG-oc-ggp" eventType="touchUpInside" id="Owl-Mj-8q0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-07-sax">
-                                <rect key="frame" x="129" y="115" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Budget Goal"/>
-                                <connections>
-                                    <action selector="addBudgetTapped:" destination="dbG-oc-ggp" eventType="touchUpInside" id="z2V-UM-wpY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-t2-tIP">
-                                <rect key="frame" x="16" y="73" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="BK4-8Y-QjM"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Gfv-gL-a4O"/>
-                    <connections>
-                        <outlet property="emailLabel" destination="PpU-t2-tIP" id="Pwl-7G-AKU"/>
-                        <outlet property="logOutButton" destination="aiP-ae-uiw" id="EMO-6x-6nH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FqJ-R3-MhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5866" y="-805"/>
         </scene>
         <!--Add Expense View Controller-->
         <scene sceneID="ef2-R0-IkS">
@@ -571,7 +504,10 @@
             <point key="canvasLocation" x="5269.6000000000004" y="-1744.6776611694154"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo.png" width="1018" height="690"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eV5-iJ-Nxg"/>
+        <segue reference="5gf-D4-fNj"/>
     </inferredMetricsTieBreakers>
 </document>

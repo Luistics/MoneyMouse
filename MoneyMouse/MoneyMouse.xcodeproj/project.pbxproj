@@ -7,25 +7,27 @@
     objects = {
 
 /* Begin PBXBuildFile section */
-		374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
-		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
-		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
-		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
-		DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */; };
-		DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */; };
-		DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */; };
-		DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF51B21AE2FF500C249B7 /* Main.storyboard */; };
-		DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */; };
-		DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52121AE2FF600C249B7 /* Assets.xcassets */; };
-		DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */; };
-		DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */; };
-		DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */; };
-		DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */; };
-		DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */; };
-		DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */; };
-		DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */; };
-		DE87520521B4A00300D014DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE87520421B4A00300D014DF /* GoogleService-Info.plist */; };
-		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
+        374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
+        59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
+        59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
+        59D660C721B5F38B000DFFBC /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D660C621B5F38B000DFFBC /* Logo.png */; };
+        59D660CC21B5F5F2000DFFBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59D660CB21B5F5F2000DFFBC /* GoogleService-Info.plist */; };
+        93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
+        DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */; };
+        DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */; };
+        DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */; };
+        DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF51B21AE2FF500C249B7 /* Main.storyboard */; };
+        DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */; };
+        DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52121AE2FF600C249B7 /* Assets.xcassets */; };
+        DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */; };
+        DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */; };
+        DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */; };
+        DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */; };
+        DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */; };
+        DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */; };
+        DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */; };
+        DE87520521B4A00300D014DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE87520421B4A00300D014DF /* GoogleService-Info.plist */; };
+        F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,38 +48,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
-		15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
-		3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.debug.xcconfig"; sourceTree = "<group>"; };
-		C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		DE0CF51C21AE2FF500C249B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE0CF51F21AE2FF500C249B7 /* MoneyMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyMouse.xcdatamodel; sourceTree = "<group>"; };
-		DE0CF52121AE2FF600C249B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE0CF52421AE2FF600C249B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DE0CF52621AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE0CF52B21AE2FF600C249B7 /* MoneyMouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseTests.swift; sourceTree = "<group>"; };
-		DE0CF53121AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE0CF53621AE2FF600C249B7 /* MoneyMouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseUITests.swift; sourceTree = "<group>"; };
-		DE0CF53C21AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
-		DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
-		DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetGoal.swift; sourceTree = "<group>"; };
-		DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		DE87520421B4A00300D014DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+        152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
+        15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
+        3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+        59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+        59D660C421B5DB3A000DFFBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        59D660C621B5F38B000DFFBC /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+        59D660CB21B5F5F2000DFFBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.release.xcconfig"; sourceTree = "<group>"; };
+        6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.debug.xcconfig"; sourceTree = "<group>"; };
+        C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.debug.xcconfig"; sourceTree = "<group>"; };
+        DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+        DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+        DE0CF51C21AE2FF500C249B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        DE0CF51F21AE2FF500C249B7 /* MoneyMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyMouse.xcdatamodel; sourceTree = "<group>"; };
+        DE0CF52121AE2FF600C249B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        DE0CF52421AE2FF600C249B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        DE0CF52621AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DE0CF52B21AE2FF600C249B7 /* MoneyMouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseTests.swift; sourceTree = "<group>"; };
+        DE0CF53121AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DE0CF53621AE2FF600C249B7 /* MoneyMouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyMouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMouseUITests.swift; sourceTree = "<group>"; };
+        DE0CF53C21AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+        DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
+        DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetGoal.swift; sourceTree = "<group>"; };
+        DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+        DE87520421B4A00300D014DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,124 +113,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		59D1003A21AE3BEE00FF3383 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
-				DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
-				DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */,
-				DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */,
-				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
-				DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
-				59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
-				59D1003821AE3B8100FF3383 /* LoginViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		59D1003B21AE3C1600FF3383 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
-				DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D316FB92C70DE8FA780FA5C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */,
-				152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */,
-				C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */,
-				15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */,
-				04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */,
-				609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
-				F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
-				6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE0CF50B21AE2FF500C249B7 = {
-			isa = PBXGroup;
-			children = (
-				DE0CF51621AE2FF500C249B7 /* MoneyMouse */,
-				DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */,
-				DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */,
-				DE0CF51521AE2FF500C249B7 /* Products */,
-				D316FB92C70DE8FA780FA5C0 /* Pods */,
-				DDE2D1A31833B2FFAED48690 /* Frameworks */,
-                DE87520321B49FEC00D014DF /* Recovered References */,
-			);
-			sourceTree = "<group>";
-		};
-		DE0CF51521AE2FF500C249B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */,
-				DE0CF52B21AE2FF600C249B7 /* MoneyMouseTests.xctest */,
-				DE0CF53621AE2FF600C249B7 /* MoneyMouseUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
-			isa = PBXGroup;
-			children = (
-				DE87520421B4A00300D014DF /* GoogleService-Info.plist */,
-				DE6F4D9621B48DF9009CC536 /* Models */,
-				59D1003B21AE3C1600FF3383 /* View */,
-				59D1003A21AE3BEE00FF3383 /* Controller */,
-				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
-				DE0CF52621AE2FF600C249B7 /* Info.plist */,
-				DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */,
-			);
-			path = MoneyMouse;
-			sourceTree = "<group>";
-		};
-		DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */ = {
-			isa = PBXGroup;
-			children = (
-				DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */,
-				DE0CF53121AE2FF600C249B7 /* Info.plist */,
-			);
-			path = MoneyMouseTests;
-			sourceTree = "<group>";
-		};
-		DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */,
-				DE0CF53C21AE2FF600C249B7 /* Info.plist */,
-			);
-			path = MoneyMouseUITests;
-			sourceTree = "<group>";
-		};
-		DE6F4D9621B48DF9009CC536 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DE87520321B49FEC00D014DF /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
+        59D1003A21AE3BEE00FF3383 /* Controller */ = {
+            isa = PBXGroup;
+            children = (
+                DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
+                DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
+                DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */,
+                DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */,
+                DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
+                DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
+                59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
+                59D1003821AE3B8100FF3383 /* LoginViewController.swift */,
+            );
+            path = Controller;
+            sourceTree = "<group>";
+        };
+        59D1003B21AE3C1600FF3383 /* View */ = {
+            isa = PBXGroup;
+            children = (
+                DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
+                DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
+            );
+            path = View;
+            sourceTree = "<group>";
+        };
+        59D660C821B5F3AC000DFFBC /* Images */ = {
+            isa = PBXGroup;
+            children = (
+                59D660C621B5F38B000DFFBC /* Logo.png */,
+            );
+            path = Images;
+            sourceTree = "<group>";
+        };
+        D316FB92C70DE8FA780FA5C0 /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */,
+                152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */,
+                C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */,
+                15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */,
+                04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */,
+                609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
+                F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
+                6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        DE0CF50B21AE2FF500C249B7 = {
+            isa = PBXGroup;
+            children = (
+                DE0CF51621AE2FF500C249B7 /* MoneyMouse */,
+                DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */,
+                DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */,
+                DE0CF51521AE2FF500C249B7 /* Products */,
+                D316FB92C70DE8FA780FA5C0 /* Pods */,
+                DDE2D1A31833B2FFAED48690 /* Frameworks */,
+				DE87520321B49FEC00D014DF /* Recovered References */,
+            );
+            sourceTree = "<group>";
+        };
+        DE0CF51521AE2FF500C249B7 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */,
+                DE0CF52B21AE2FF600C249B7 /* MoneyMouseTests.xctest */,
+                DE0CF53621AE2FF600C249B7 /* MoneyMouseUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
+            isa = PBXGroup;
+            children = (
+                DE87520421B4A00300D014DF /* GoogleService-Info.plist */,
+                DE6F4D9621B48DF9009CC536 /* Models */,
+                59D1003B21AE3C1600FF3383 /* View */,
+                59D1003A21AE3BEE00FF3383 /* Controller */,
+                59D660C821B5F3AC000DFFBC /* Images */,
+                DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
+                DE0CF52621AE2FF600C249B7 /* Info.plist */,
+                59D660CB21B5F5F2000DFFBC /* GoogleService-Info.plist */,
+                DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */,
+            );
+            path = MoneyMouse;
+            sourceTree = "<group>";
+        };
+        DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */ = {
+            isa = PBXGroup;
+            children = (
+                DE0CF52F21AE2FF600C249B7 /* MoneyMouseTests.swift */,
+                DE0CF53121AE2FF600C249B7 /* Info.plist */,
+                59D660C421B5DB3A000DFFBC /* GoogleService-Info.plist */,
+            );
+            path = MoneyMouseTests;
+            sourceTree = "<group>";
+        };
+        DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */ = {
+            isa = PBXGroup;
+            children = (
+                DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */,
+                DE0CF53C21AE2FF600C249B7 /* Info.plist */,
+            );
+            path = MoneyMouseUITests;
+            sourceTree = "<group>";
+        };
+        DE6F4D9621B48DF9009CC536 /* Models */ = {
+            isa = PBXGroup;
+            children = (
+                DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */,
+            );
+            path = Models;
+            sourceTree = "<group>";
+        };
+        DE87520321B49FEC00D014DF /* Recovered References */ = {
+            isa = PBXGroup;
+            children = (
+                59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */,
+            );
+            name = "Recovered References";
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,31 +346,32 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE0CF51221AE2FF500C249B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
-                DE87520521B4A00300D014DF /* GoogleService-Info.plist in Resources */,
-				DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
-				DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF52921AE2FF600C249B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF53421AE2FF600C249B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        DE0CF51221AE2FF500C249B7 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
+				59D660C721B5F38B000DFFBC /* Logo.png in Resources */,
+				59D660CC21B5F5F2000DFFBC /* GoogleService-Info.plist in Resources */,
+                DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
+                DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF52921AE2FF600C249B7 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF53421AE2FF600C249B7 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -411,6 +428,7 @@
             );
             inputPaths = (
                 "${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
                 "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
                 "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
                 "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -421,6 +439,7 @@
             outputFileListPaths = (
             );
             outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
                 "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
                 "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
                 "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -457,39 +476,39 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE0CF51021AE2FF500C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */,
-				59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
-				59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
-				DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
-				DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
-				DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */,
-				DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */,
-				DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
-				DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */,
-				DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF52721AE2FF600C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF53221AE2FF600C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        DE0CF51021AE2FF500C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */,
+                59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
+                59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
+                DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
+                DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
+                DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */,
+                DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */,
+                DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
+                DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */,
+                DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF52721AE2FF600C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF53221AE2FF600C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
