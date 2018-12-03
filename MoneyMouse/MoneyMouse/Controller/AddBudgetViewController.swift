@@ -17,7 +17,7 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
 
     @IBOutlet weak var budgetPicker: UIPickerView!
-    
+    @IBOutlet weak var budgetTitle: UITextField!
     @IBOutlet weak var budgetLabel: UILabel!
 
     let ref = Database.database().reference(withPath: "budgets")
@@ -56,13 +56,18 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         guard let text = budgetAmount.text, let number = Float(text) else {
             return
         }
-        let budgetGoal = BudgetGoal(amount: number,
-                                    title:"BudgetTest",
+        
+        let budgetTitle = self.budgetTitle.text
+        
+        let budgetGoal = BudgetGoal(title:budgetTitle!,
+                                    amount: number,
                                     category: budgetLabel.text!,
                                     addedByUser: self.userEmail!,
                                     completed: false)
         
-        self.ref.setValue(budgetGoal.toAnyObject())
+        let budgetRef = self.ref.child(budgetTitle!.lowercased())
+        
+        budgetRef.setValue(budgetGoal.toAnyObject())
     }
     
     func UpdateData(){

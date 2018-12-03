@@ -19,7 +19,7 @@ struct BudgetGoal {
     let amount: Float
     let title: String
     
-    init(amount: Float, title: String, category: String, addedByUser: String, completed: Bool, key: String = ""){
+    init(title: String, amount: Float, category: String, addedByUser: String, completed: Bool, key: String = ""){
         self.ref = nil
         self.key = key
         self.addedByUser = addedByUser
