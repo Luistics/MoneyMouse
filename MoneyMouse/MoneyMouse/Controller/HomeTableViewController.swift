@@ -11,16 +11,42 @@ import FirebaseAuth
 import FirebaseDatabase
 import Charts
 
+class BudgetProgressTableViewCell: UITableViewCell{
+    
+    @IBOutlet weak var budgetTotalAmount: UILabel!
+    @IBOutlet weak var budgetTitle: UILabel!
+    @IBOutlet weak var budgetProgress: UIProgressView!
+    
+}
+
+
 class HomeTableViewController: UITableViewController {
 
     
+    var testBudgets = [BudgetGoal]()
+    let cellSpacingHeight : CGFloat = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let userID = Auth.auth().currentUser!.uid;
         
         let ref = Database.database().reference(withPath:userID);
+        
+        let budgetGoal = BudgetGoal(title:"Test Budget!",
+                                    amount: 100,
+                                    category: "Travel",
+                                    addedByUser: "lao294@nyu.edu",
+                                    completed: false)
+        
+        let budgetGoal1 = BudgetGoal(title:"Test Budget 2!",
+                                    amount: 20,
+                                    category: "Entertainment",
+                                    addedByUser: "lao@nyu.edu",
+                                    completed: false)
+        
+        testBudgets = [budgetGoal, budgetGoal1]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,23 +59,28 @@ class HomeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return testBudgets.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "budgetProgressCell", for: indexPath) as! BudgetProgressTableViewCell
+        
+        cell.budgetTitle?.text = testBudgets[indexPath.section].title
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -85,6 +116,8 @@ class HomeTableViewController: UITableViewController {
         return true
     }
     */
+    
+
 
     
     @IBAction func addBudgetTapped(_ sender: Any) {
