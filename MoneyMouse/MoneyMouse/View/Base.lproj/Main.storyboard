@@ -172,36 +172,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qN0-Bi-U6A">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="budgetProgressCell" id="qN0-Bi-U6A" customClass="BudgetProgressTableViewCell" customModule="MoneyMouse" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qN0-Bi-U6A" id="Rjz-fJ-hN5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-nw-XTo">
-                                            <rect key="frame" x="8" y="0.0" width="359" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-nw-XTo">
+                                            <rect key="frame" x="8" y="-6" width="359" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Joc-5A-UXI">
-                                            <rect key="frame" x="8" y="22" width="150" height="5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfq-GR-pex">
+                                            <rect key="frame" x="305" y="2" width="70" height="12"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="4" id="V2r-Jz-ISM"/>
+                                                <constraint firstAttribute="width" constant="70" id="xCB-TI-XcE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Joc-5A-UXI">
+                                            <rect key="frame" x="8" y="17" width="351" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="VbT-Dc-A9b" userLabel="height = 20"/>
                                             </constraints>
                                         </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fg-Ny-a8B">
+                                            <rect key="frame" x="152.5" y="3" width="70" height="11"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="sCP-JF-XMb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Joc-5A-UXI" secondAttribute="trailing" constant="217" id="K4a-5r-eJT"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="top" secondItem="Rfq-GR-pex" secondAttribute="bottom" constant="3" id="8ai-uq-YKt"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="leading" secondItem="Rjz-fJ-hN5" secondAttribute="leading" constant="8" id="GNL-Ml-oIp"/>
                                         <constraint firstItem="Uof-nw-XTo" firstAttribute="leading" secondItem="Rjz-fJ-hN5" secondAttribute="leading" constant="8" id="OZ4-01-QwH"/>
                                         <constraint firstAttribute="trailing" secondItem="Uof-nw-XTo" secondAttribute="trailing" constant="8" id="TGe-6T-X8P"/>
-                                        <constraint firstItem="Uof-nw-XTo" firstAttribute="top" secondItem="Rjz-fJ-hN5" secondAttribute="top" id="WCe-Pl-sVg"/>
-                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="leading" secondItem="Rjz-fJ-hN5" secondAttribute="leading" constant="8" id="aPw-Tg-20s"/>
-                                        <constraint firstAttribute="bottom" secondItem="Joc-5A-UXI" secondAttribute="bottom" constant="17.5" id="hWO-68-YDX"/>
-                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="top" secondItem="Uof-nw-XTo" secondAttribute="bottom" constant="6" id="oDU-at-nEA"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="top" secondItem="Uof-nw-XTo" secondAttribute="bottom" constant="-6" id="UJG-LW-bMG"/>
+                                        <constraint firstItem="Uof-nw-XTo" firstAttribute="top" secondItem="Rjz-fJ-hN5" secondAttribute="top" constant="-6" id="WCe-Pl-sVg"/>
+                                        <constraint firstAttribute="trailing" secondItem="Joc-5A-UXI" secondAttribute="trailing" constant="16" id="Wn4-3N-pxi"/>
+                                        <constraint firstAttribute="bottom" secondItem="Joc-5A-UXI" secondAttribute="bottom" constant="6.5" id="X8w-u5-Lnu"/>
+                                        <constraint firstAttribute="trailing" secondItem="Joc-5A-UXI" secondAttribute="trailing" constant="16" id="YZb-42-vge"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="top" secondItem="Uof-nw-XTo" secondAttribute="bottom" constant="-6" id="cBJ-YL-fTR"/>
+                                        <constraint firstItem="9Fg-Ny-a8B" firstAttribute="baseline" secondItem="Rfq-GR-pex" secondAttribute="baseline" id="cWq-kv-BmH"/>
+                                        <constraint firstItem="9Fg-Ny-a8B" firstAttribute="firstBaseline" secondItem="Rfq-GR-pex" secondAttribute="firstBaseline" id="dYd-Fo-UNr"/>
+                                        <constraint firstItem="Rfq-GR-pex" firstAttribute="centerY" secondItem="Uof-nw-XTo" secondAttribute="centerY" id="euP-b3-mtn"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="trailing" secondItem="Rfq-GR-pex" secondAttribute="trailing" constant="-16" id="k53-4j-fLo"/>
+                                        <constraint firstItem="9Fg-Ny-a8B" firstAttribute="centerX" secondItem="Uof-nw-XTo" secondAttribute="centerX" id="lF6-Mx-HhA"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="leading" secondItem="Uof-nw-XTo" secondAttribute="leading" id="pYd-YT-EJI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="budgetProgress" destination="Joc-5A-UXI" id="CdZ-pa-BKq"/>
+                                    <outlet property="budgetTitle" destination="Uof-nw-XTo" id="Xvh-Uc-m6b"/>
+                                    <outlet property="budgetTotalAmount" destination="Rfq-GR-pex" id="ewn-vF-F68"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
