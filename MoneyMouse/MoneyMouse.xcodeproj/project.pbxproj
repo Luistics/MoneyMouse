@@ -11,6 +11,7 @@
 		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
 		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
 		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
+		DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */; };
 		DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */; };
 		DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */; };
 		DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0CF51B21AE2FF500C249B7 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		DE0CF51421AE2FF500C249B7 /* MoneyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		59D1003A21AE3BEE00FF3383 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
 				DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
 				DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */,
 				DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */,
@@ -462,6 +465,7 @@
 				59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
 				59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
 				DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
+				DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
 				DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */,
 				DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */,
 				DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
