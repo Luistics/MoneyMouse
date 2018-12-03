@@ -40,9 +40,6 @@ class HomeScreenViewController: UIViewController {
         UIApplication.shared.keyWindow?.rootViewController = initial
     }
     
-    @IBAction func addBudgetTapped(_ sender: Any) {
-        performSegue(withIdentifier: "addBudgetGoal", sender: <#T##Any?#>)
-    }
     /*
     // MARK: - Navigation
 
