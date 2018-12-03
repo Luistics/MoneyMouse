@@ -18,8 +18,9 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userEmail = Auth.auth().currentUser?.email;
-        let ref = Database.database().reference(withPath:userEmail!);
+        let userID = Auth.auth().currentUser!.uid;
+        
+        let ref = Database.database().reference(withPath:userID);
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -87,7 +88,7 @@ class HomeTableViewController: UITableViewController {
 
     
     @IBAction func addBudgetTapped(_ sender: Any) {
-        performSegue(withIdentifier: "addBudgetGoal", sender: <#T##Any?#>)
+        performSegue(withIdentifier: "addBudgetGoal", sender: self)
     }
     
     @IBAction func signOutAction(_ sender: Any) {

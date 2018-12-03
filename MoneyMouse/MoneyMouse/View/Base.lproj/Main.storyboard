@@ -180,17 +180,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-nw-XTo">
-                                            <rect key="frame" x="8" y="0.0" width="359" height="12"/>
+                                            <rect key="frame" x="8" y="0.0" width="359" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Joc-5A-UXI">
+                                            <rect key="frame" x="8" y="22" width="150" height="5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="4" id="V2r-Jz-ISM"/>
+                                            </constraints>
+                                        </progressView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="Uof-nw-XTo" secondAttribute="bottom" constant="31.5" id="10R-FV-1Qj"/>
+                                        <constraint firstAttribute="trailing" secondItem="Joc-5A-UXI" secondAttribute="trailing" constant="217" id="K4a-5r-eJT"/>
                                         <constraint firstItem="Uof-nw-XTo" firstAttribute="leading" secondItem="Rjz-fJ-hN5" secondAttribute="leading" constant="8" id="OZ4-01-QwH"/>
                                         <constraint firstAttribute="trailing" secondItem="Uof-nw-XTo" secondAttribute="trailing" constant="8" id="TGe-6T-X8P"/>
                                         <constraint firstItem="Uof-nw-XTo" firstAttribute="top" secondItem="Rjz-fJ-hN5" secondAttribute="top" id="WCe-Pl-sVg"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="leading" secondItem="Rjz-fJ-hN5" secondAttribute="leading" constant="8" id="aPw-Tg-20s"/>
+                                        <constraint firstAttribute="bottom" secondItem="Joc-5A-UXI" secondAttribute="bottom" constant="17.5" id="hWO-68-YDX"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="top" secondItem="Uof-nw-XTo" secondAttribute="bottom" constant="6" id="oDU-at-nEA"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
