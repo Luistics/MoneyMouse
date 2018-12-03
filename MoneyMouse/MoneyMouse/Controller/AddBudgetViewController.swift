@@ -29,6 +29,10 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value as Any)
+        })
 
         // Do any additional setup after loading the view.
         budgetPicker.delegate = self;
@@ -65,7 +69,7 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
                                     addedByUser: self.userEmail!,
                                     completed: false)
         
-        let budgetRef = self.ref.child(budgetTitle!.lowercased())
+        let budgetRef = self.ref.child(self.userEmail!).child(budgetTitle!.lowercased())
         
         budgetRef.setValue(budgetGoal.toAnyObject())
     }
