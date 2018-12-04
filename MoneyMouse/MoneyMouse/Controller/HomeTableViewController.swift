@@ -30,8 +30,6 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         self.view.backgroundColor = UIColor.flatBlue()
 
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
@@ -39,7 +37,6 @@ class HomeTableViewController: UITableViewController {
         
         
         let ref = Database.database().reference(withPath:"budgets/" + String(userID));
-        
         
         ref.observe(.value, with: { snapshot in
             var newItems: [BudgetGoal] = []
@@ -72,6 +69,12 @@ class HomeTableViewController: UITableViewController {
         
         testBudgets = [budgetGoal, budgetGoal1]
 
+    }
+    
+    func stripTime(from originalDate: Date) -> Date {
+        let components = Calendar.current.dateComponents([.year, .month, .day], from: originalDate)
+        let date = Calendar.current.date(from: components)
+        return date!
     }
 
     // MARK: - Table view data source, all functions for table view

@@ -34,10 +34,11 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
         
+        /*
         ref.observe(.value, with: { snapshot in
             print(snapshot.value as Any)
         })
-
+        */
         // Do any additional setup after loading the view.
         budgetPicker.delegate = self;
         budgetPicker.dataSource = self;
@@ -60,6 +61,10 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     @IBAction func addBudgetPressed(_ sender: Any) {
+        
+        //Todo: Add alert controller to ask user if they are sure, if yes,
+        //then segue into the home view.
+        
         
         guard let text = budgetAmount.text, let number = Float(text) else {
             return
