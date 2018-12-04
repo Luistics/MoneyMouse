@@ -134,11 +134,11 @@
             </objects>
             <point key="canvasLocation" x="-226.40000000000001" y="-215.44227886056973"/>
         </scene>
-        <!--Charts View Controller-->
+        <!--Add Expense View Controller-->
         <scene sceneID="Ran-e4-HDV">
             <objects>
-                <viewController id="ASC-al-2L0" customClass="ChartsViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Isd-wb-QOs">
+                <viewController id="ASC-al-2L0" customClass="AddExpenseViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Isd-wb-QOs" customClass="ADdex">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -149,16 +149,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-FM-o3f">
-                                <rect key="frame" x="132" y="106" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add an expense"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BsP-w8-22h"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YX4-gI-p1U"/>
+                    <navigationItem key="navigationItem" id="YX4-gI-p1U">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="yTV-Tc-oiv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zw4-FM-o3f">
+                                <rect key="frame" x="249" y="7" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add an expense"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="bc1-Jl-tha" kind="show" id="sct-Nh-SMs"/>
                     </connections>
