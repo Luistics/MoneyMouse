@@ -2,6 +2,7 @@
 //  AddExpenseViewController.swift
 //  MoneyMouse
 //
+//  Created by Eisen Huang on 12/3/18.
 //  Created by Luis Olivar on 12/4/18.
 //  Copyright © 2018 edu.nyu. All rights reserved.
 //
@@ -23,6 +24,12 @@ class AddExpenseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.flatBlue()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
+        
         
         self.view.backgroundColor = UIColor.flatWhite()
         self.navigationController?.navigationBar.tintColor = UIColor.flatMint()
