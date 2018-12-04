@@ -11,6 +11,7 @@ target 'MoneyMouse' do
     pod 'Firebase/Database'
     pod 'Charts'
     pod 'ChameleonFramework'
+    pod 'SwipeCellKit'
 
   target 'MoneyMouseTests' do
     inherit! :search_paths

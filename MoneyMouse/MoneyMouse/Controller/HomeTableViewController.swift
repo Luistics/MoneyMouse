@@ -11,6 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import Charts
 import ChameleonFramework
+import SwipeCellKit
 
 class BudgetProgressTableViewCell: UITableViewCell{
     
@@ -85,6 +86,7 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
         return cellSpacingHeight
     }
     
