@@ -41,24 +41,35 @@ class AddExpenseViewController: UIViewController {
         //Todo: Show only the number keypad when asking for numbers in text field.
         //Todo: Give user a UIAlertController. If no is tapped, abort this function, else add to db
         //  and return to previous view controller
-        
         let amountSpent = self.amountSpent?.text
+        let numberFormatter = NumberFormatter()
+        let number = numberFormatter.number(from: amountSpent ?? "0.0")
+        let amountSpentFloat = number?.floatValue
+        
+        
         let budgetTitle = self.budgetTitleEntered?.text
         let budgetTitleLower = budgetTitle?.lowercased()
         let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd"
+        df.dateFormat = "yyyy-MM-dd hh:mm:ss"
         let now = df.string(from: Date())
-        let expenseRef = self.ref.child(self.userID).child((budgetTitle?.lowercased())!)
-        
-        let ref = Database.database().reference(withPath:"budgets/" + String(userID));
+        let expenseRef = self.ref.child(self.userID).child(budgetTitleLower!).child(now)
+        let budgetsRef = Database.database().reference(withPath:"budgets/" + String(userID));
         
         
         //search through the budgets database for an entry that corresponds to user input title
-        ref.observe(.value, with: { snapshot in
+        budgetsRef.observeSingleEvent(of:.value, with: { snapshot in
             if snapshot.hasChild(budgetTitleLower!){
-                let temp = snapshot.childSnapshot(forPath: budgetTitleLower! + "/category").value
-                let expenseData = ExpenseEntry(assignedBudget: budgetTitle!, expenseAmount: Float(amountSpent!)!, category: temp as! String, addedByUser: self.userEmail!, dateEntered: now)
-    
+                
+                let budgetToUpdate = snapshot.childSnapshot(forPath:budgetTitleLower! + "/currentAmount").value
+                let categoryOfExpense = snapshot.childSnapshot(forPath: budgetTitleLower! + "/category").value
+                let expenseData = ExpenseEntry(assignedBudget: budgetTitle!, expenseAmount: amountSpentFloat!, category: categoryOfExpense as! String, addedByUser: self.userEmail!, dateEntered: now)
+                
+                let budgetToUpdateFloat = (budgetToUpdate as AnyObject).floatValue
+                let temp = budgetToUpdateFloat! + amountSpentFloat!
+                
+                let updateRef = Database.database().reference(withPath:"budgets/" + String(self.userID) + "/" + budgetTitleLower! + "/currentAmount")
+                updateRef.setValue(temp)
+                print(temp)
                 expenseRef.setValue(expenseData.toAnyObject())
             }
             else{
