@@ -24,7 +24,7 @@
 		DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */; };
 		DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */; };
 		DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */; };
-		DE87520521B4A00300D014DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE87520421B4A00300D014DF /* GoogleService-Info.plist */; };
+		DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */; };
 		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +76,7 @@
 		DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 		DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetGoal.swift; sourceTree = "<group>"; };
 		DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		DE87520421B4A00300D014DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,11 +181,11 @@
 		DE0CF51621AE2FF500C249B7 /* MoneyMouse */ = {
 			isa = PBXGroup;
 			children = (
-				DE87520421B4A00300D014DF /* GoogleService-Info.plist */,
 				DE6F4D9621B48DF9009CC536 /* Models */,
 				59D1003B21AE3C1600FF3383 /* View */,
 				59D1003A21AE3BEE00FF3383 /* Controller */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
+				DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */,
 				DE0CF52621AE2FF600C249B7 /* Info.plist */,
 				DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */,
 			);
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
-				DE87520521B4A00300D014DF /* GoogleService-Info.plist in Resources */,
+				DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */,
 				DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
 				DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
 			);

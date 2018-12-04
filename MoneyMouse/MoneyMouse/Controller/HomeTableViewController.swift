@@ -16,13 +16,13 @@ class BudgetProgressTableViewCell: UITableViewCell{
     @IBOutlet weak var budgetTotalAmount: UILabel!
     @IBOutlet weak var budgetTitle: UILabel!
     @IBOutlet weak var budgetProgress: UIProgressView!
-    
+    @IBOutlet weak var budgetCurrentAmount: UILabel!
+    @IBOutlet weak var budgetRemaining: UILabel!
 }
 
 
 class HomeTableViewController: UITableViewController {
 
-    
     var testBudgets = [BudgetGoal]()
     let cellSpacingHeight : CGFloat = 10
     
@@ -32,33 +32,47 @@ class HomeTableViewController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let userID = Auth.auth().currentUser!.uid;
         
-        let ref = Database.database().reference(withPath:userID);
+        
+        let ref = Database.database().reference(withPath:"budgets/" + String(userID));
+        
+        
+        ref.observe(.value, with: { snapshot in
+            var newItems: [BudgetGoal] = []
+            
+            for child in snapshot.children {
+                if let snapshot = child as? DataSnapshot,
+                    let budgetGoal = BudgetGoal(snapshot: snapshot) {
+                    newItems.append(budgetGoal)
+                }
+            }
+            
+            self.testBudgets = newItems
+            self.tableView.reloadData()
+        })
+        
         
         let budgetGoal = BudgetGoal(title:"Test Budget!",
-                                    amount: 100,
+                                    totalAmount: 100,
+                                    currentAmount: 20,
                                     category: "Travel",
                                     addedByUser: "lao294@nyu.edu",
                                     completed: false)
         
         let budgetGoal1 = BudgetGoal(title:"Test Budget 2!",
-                                    amount: 20,
+                                    totalAmount: 20,
+                                    currentAmount: 3,
                                     category: "Entertainment",
                                     addedByUser: "lao@nyu.edu",
                                     completed: false)
         
         testBudgets = [budgetGoal, budgetGoal1]
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table view data source, all functions for table view
 
+    //define the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return testBudgets.count
     }
 
@@ -66,8 +80,9 @@ class HomeTableViewController: UITableViewController {
         return cellSpacingHeight
     }
     
+    
+    //Define the number of rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 1
     }
 
@@ -76,7 +91,30 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "budgetProgressCell", for: indexPath) as! BudgetProgressTableViewCell
         
         cell.budgetTitle?.text = testBudgets[indexPath.section].title
-        // Configure the cell...
+        
+        let totalAmount = testBudgets[indexPath.section].totalAmount
+        
+        cell.budgetTotalAmount?.text = "$" + String(format: "%.2f",totalAmount)
+        
+        let currentAmount = testBudgets[indexPath.section].currentAmount
+        
+        cell.budgetCurrentAmount?.text = "$" + String(format: "%.2f",currentAmount)
+        
+        let progress = currentAmount/totalAmount
+        
+        let remaining = totalAmount - currentAmount
+        
+        cell.budgetRemaining?.text = "$" + String(format: "%.2f",remaining)
+        
+        if(totalAmount - currentAmount < 0){
+            //bar color red
+        }
+        
+        if(progress > 0.75){
+            //bar color yellow
+        }
+        
+        cell.budgetProgress.setProgress(progress, animated: true)
 
         return cell
     }
@@ -118,7 +156,7 @@ class HomeTableViewController: UITableViewController {
     */
     
 
-
+    //IBAction functions for button presses
     
     @IBAction func addBudgetTapped(_ sender: Any) {
         performSegue(withIdentifier: "addBudgetGoal", sender: self)

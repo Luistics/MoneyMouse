@@ -16,15 +16,17 @@ struct BudgetGoal {
     let addedByUser: String
     var completed: Bool
     let category: String
-    let amount: Float
+    let totalAmount: Float
+    let currentAmount: Float
     let title: String
     
-    init(title: String, amount: Float, category: String, addedByUser: String, completed: Bool, key: String = ""){
+    init(title: String, totalAmount: Float, currentAmount: Float, category: String, addedByUser: String, completed: Bool, key: String = ""){
         self.ref = nil
         self.key = key
         self.addedByUser = addedByUser
         self.completed = completed
-        self.amount = amount
+        self.totalAmount = totalAmount
+        self.currentAmount = currentAmount
         self.category = category
         self.title = title
     }
@@ -34,8 +36,9 @@ struct BudgetGoal {
             let value = snapshot.value as? [String: AnyObject],
             let addedByUser = value["addedByUser"] as? String,
             let category = value["category"] as? String,
-            let amount = value["amount"] as? Float,
+            let totalAmount = value["totalAmount"] as? Float,
             let title = value["title"] as? String,
+            let currentAmount = value["currentAmount"] as? Float,
             let completed = value["completed"] as? Bool else{
             return nil
         }
@@ -45,7 +48,8 @@ struct BudgetGoal {
         self.addedByUser = addedByUser
         self.completed = completed
         self.category = category
-        self.amount = amount
+        self.totalAmount = totalAmount
+        self.currentAmount = currentAmount
         self.title = title
     }
     
@@ -55,7 +59,8 @@ struct BudgetGoal {
             "addedByUser": addedByUser,
             "completed": completed,
             "category": category,
-            "amount": amount
+            "totalAmount": totalAmount,
+            "currentAmount": currentAmount
         ]
     }
 }

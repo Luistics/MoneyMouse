@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    let budgetGoalArray = ["Travel","Transportaion", "Living" , "Other"];
+    let budgetGoalArray = ["Travel","Transportation", "Living" , "Entertainment", "Other"];
     var budgetSelected = "";
     
 
@@ -22,9 +22,9 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
     let ref = Database.database().reference(withPath: "budgets")
     let userEmail = Auth.auth().currentUser?.email;
+    let userID = Auth.auth().currentUser!.uid;
     
     @IBOutlet weak var budgetAmount: UITextField!
-    //titleOfBudget
     
     
     override func viewDidLoad() {
@@ -64,12 +64,13 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let budgetTitle = self.budgetTitle.text
         
         let budgetGoal = BudgetGoal(title:budgetTitle!,
-                                    amount: number,
+                                    totalAmount: number,
+                                    currentAmount: 0,
                                     category: budgetLabel.text!,
                                     addedByUser: self.userEmail!,
                                     completed: false)
         
-        let budgetRef = self.ref.child(self.userEmail!).child(budgetTitle!.lowercased())
+        let budgetRef = self.ref.child(self.userID).child(budgetTitle!.lowercased())
         
         budgetRef.setValue(budgetGoal.toAnyObject())
     }
