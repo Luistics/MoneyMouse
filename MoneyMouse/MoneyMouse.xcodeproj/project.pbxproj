@@ -108,62 +108,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		59D1003A21AE3BEE00FF3383 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
-				DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
-				DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */,
-				DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */,
-				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
-				DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
-				59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
-				59D1003821AE3B8100FF3383 /* LoginViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		59D1003B21AE3C1600FF3383 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
-				DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D316FB92C70DE8FA780FA5C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */,
-				152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */,
-				C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */,
-				15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */,
-				04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */,
-				609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
-				F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
-				6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE0CF50B21AE2FF500C249B7 = {
-			isa = PBXGroup;
-			children = (
-				DE0CF51621AE2FF500C249B7 /* MoneyMouse */,
-				DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */,
-				DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */,
-				DE0CF51521AE2FF500C249B7 /* Products */,
-				D316FB92C70DE8FA780FA5C0 /* Pods */,
-				DDE2D1A31833B2FFAED48690 /* Frameworks */,
+        59D1003A21AE3BEE00FF3383 /* Controller */ = {
+            isa = PBXGroup;
+            children = (
+                DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
+                DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
+                DE6F4D9221B3B372009CC536 /* AddEntryViewController.swift */,
+                DE80202E21AF0BA5005A9753 /* HomeScreenViewController.swift */,
+                DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
+                DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
+                59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
+                59D1003821AE3B8100FF3383 /* LoginViewController.swift */,
+            );
+            path = Controller;
+            sourceTree = "<group>";
+        };
+        59D1003B21AE3C1600FF3383 /* View */ = {
+            isa = PBXGroup;
+            children = (
+                DE0CF52321AE2FF600C249B7 /* LaunchScreen.storyboard */,
+                DE0CF51B21AE2FF500C249B7 /* Main.storyboard */,
+            );
+            path = View;
+            sourceTree = "<group>";
+        };
+        59D660C821B5F3AC000DFFBC /* Images */ = {
+            isa = PBXGroup;
+            children = (
+                59D660C621B5F38B000DFFBC /* Logo.png */,
+            );
+            path = Images;
+            sourceTree = "<group>";
+        };
+        D316FB92C70DE8FA780FA5C0 /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                8AA0892577E4501C0C709858 /* Pods-MoneyMouse.debug.xcconfig */,
+                152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */,
+                C4F06C5C7BE0772D25DE0F5C /* Pods-MoneyMouseTests.debug.xcconfig */,
+                15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */,
+                04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */,
+                609B812815A0966C04AA24C1 /* Pods-MoneyMouseUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
+                F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
+                6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        DE0CF50B21AE2FF500C249B7 = {
+            isa = PBXGroup;
+            children = (
+                DE0CF51621AE2FF500C249B7 /* MoneyMouse */,
+                DE0CF52E21AE2FF600C249B7 /* MoneyMouseTests */,
+                DE0CF53921AE2FF600C249B7 /* MoneyMouseUITests */,
+                DE0CF51521AE2FF500C249B7 /* Products */,
+                D316FB92C70DE8FA780FA5C0 /* Pods */,
+                DDE2D1A31833B2FFAED48690 /* Frameworks */,
 				DE87520321B49FEC00D014DF /* Recovered References */,
 			);
 			sourceTree = "<group>";
@@ -358,138 +366,141 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		050D54771C9F0CF002113415 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoneyMouseTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7238E06782EC1ADA990002AE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoneyMouse-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91BB06B78F6C22D7D35D9392 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D18471E0379F94658070D255 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoneyMouseUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+        050D54771C9F0CF002113415 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-MoneyMouseTests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        7238E06782EC1ADA990002AE /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-MoneyMouse-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        91BB06B78F6C22D7D35D9392 /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+                "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+                "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+                "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+                "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+                "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
+        D18471E0379F94658070D255 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-MoneyMouseUITests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE0CF51021AE2FF500C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */,
-				59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
-				59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
-				DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
-				DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
-				DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */,
-				DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */,
-				DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
-				DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */,
-				DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF52721AE2FF600C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE0CF53221AE2FF600C249B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        DE0CF51021AE2FF500C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */,
+                59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
+                59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
+                DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
+                DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
+                DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */,
+                DE6F4D9321B3B372009CC536 /* AddEntryViewController.swift in Sources */,
+                DE0CF51A21AE2FF500C249B7 /* WelcomeViewController.swift in Sources */,
+                DE0CF51821AE2FF500C249B7 /* AppDelegate.swift in Sources */,
+                DE80202F21AF0BA5005A9753 /* HomeScreenViewController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF52721AE2FF600C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE0CF53021AE2FF600C249B7 /* MoneyMouseTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DE0CF53221AE2FF600C249B7 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */

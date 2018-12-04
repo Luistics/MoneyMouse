@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import ChameleonFramework
 
 class WelcomeViewController: UIViewController {
     
@@ -18,6 +19,9 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.flatBlue()
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatBlue()
+        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
         
         // Do any additional setup after loading the view.
     }
