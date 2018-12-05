@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
+		595D419A21B74CF9008451BB /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 595D419721B74C5B008451BB /* Logo.png */; };
 		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
 		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
 		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
@@ -56,6 +57,7 @@
 		152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
 		15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
 		3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595D419721B74C5B008451BB /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595D419921B74C61008451BB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				595D419721B74C5B008451BB /* Logo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		59D1003A21AE3BEE00FF3383 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +207,7 @@
 				DE6F4D9621B48DF9009CC536 /* Models */,
 				59D1003B21AE3C1600FF3383 /* View */,
 				59D1003A21AE3BEE00FF3383 /* Controller */,
+				595D419921B74C61008451BB /* Image */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
 				DE85D33C21B7649D005791D7 /* Money_Mouse_Add_Budgeting_Goal_Icon.png */,
 				DE85D33B21B7649C005791D7 /* Money_Mouse_Charts_Icon.png */,

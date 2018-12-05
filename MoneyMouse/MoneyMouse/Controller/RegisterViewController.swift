@@ -18,9 +18,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.flatBlue()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.flatBlue()
+        
     }
     
     @IBAction func signUpAction(_ sender: Any) {
