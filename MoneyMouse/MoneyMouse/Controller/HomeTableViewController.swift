@@ -113,12 +113,13 @@ class HomeTableViewController: UITableViewController {
         
         cell.budgetRemaining?.text = "$" + String(format: "%.2f",remaining)
         
-        if(progress > 0.90){
-            cell.budgetProgress.progressTintColor = UIColor.flatRed()
-        }
+        print(progress)
         
-        if(progress > 0.75 && progress < 0.90){
+        if(progress >= 0.75 && progress <= 0.90){
             cell.budgetProgress.progressTintColor = UIColor.flatYellow()
+        }
+        else if(progress > 0.90){
+            cell.budgetProgress.progressTintColor = UIColor.flatRed()
         }
         
         cell.budgetProgress.setProgress(progress, animated: true)
