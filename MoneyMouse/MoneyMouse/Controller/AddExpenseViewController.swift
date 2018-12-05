@@ -31,12 +31,13 @@ class AddExpenseViewController: UIViewController {
     }
     
 
+    /*
+     
+ 
+     */
     
     @IBAction func addExpenseButtonTapped(_ sender: Any) {
-        
-        //Todo: Show only the number keypad when asking for numbers in text field.
-        //Todo: Give user a UIAlertController. If no is tapped, abort this function, else add to db
-        //  and return to previous view controller
+    
         let amountSpent = self.amountSpent?.text
         let numberFormatter = NumberFormatter()
         let number = numberFormatter.number(from: amountSpent ?? "0.0")

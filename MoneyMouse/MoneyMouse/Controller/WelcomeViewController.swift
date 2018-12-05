@@ -19,7 +19,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.flatBlue()
+        self.view.backgroundColor = UIColor.flatBlueColorDark()
         self.navigationController?.navigationBar.barTintColor = UIColor.flatBlue()
         self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
         

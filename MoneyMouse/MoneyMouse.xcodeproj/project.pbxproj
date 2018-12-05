@@ -22,6 +22,7 @@
 		DE0CF53B21AE2FF600C249B7 /* MoneyMouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CF53A21AE2FF600C249B7 /* MoneyMouseUITests.swift */; };
 		DE6F4D9521B488AD009CC536 /* AddBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */; };
 		DE6F4D9821B48E2D009CC536 /* BudgetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */; };
+		DE85D33A21B757C6005791D7 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DE85D33921B757C6005791D7 /* Logo.png */; };
 		DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */; };
 		DEF7A42921B705F800FEFD66 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */; };
 		DEF7A42D21B7064700FEFD66 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */; };
@@ -75,6 +76,7 @@
 		DE0CF53C21AE2FF600C249B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetViewController.swift; sourceTree = "<group>"; };
 		DE6F4D9721B48E2D009CC536 /* BudgetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetGoal.swift; sourceTree = "<group>"; };
+		DE85D33921B757C6005791D7 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
 				DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */,
 				DE0CF52621AE2FF600C249B7 /* Info.plist */,
+				DE85D33921B757C6005791D7 /* Logo.png */,
 				DE0CF51E21AE2FF500C249B7 /* MoneyMouse.xcdatamodeld */,
 			);
 			path = MoneyMouse;
@@ -339,6 +342,7 @@
 			files = (
 				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
 				DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */,
+				DE85D33A21B757C6005791D7 /* Logo.png in Resources */,
 				DE0CF52221AE2FF600C249B7 /* Assets.xcassets in Resources */,
 				DE0CF51D21AE2FF500C249B7 /* Main.storyboard in Resources */,
 			);

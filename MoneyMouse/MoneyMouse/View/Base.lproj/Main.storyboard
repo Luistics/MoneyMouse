@@ -145,11 +145,11 @@
             </objects>
             <point key="canvasLocation" x="-226.40000000000001" y="-215.44227886056973"/>
         </scene>
-        <!--Add Expense View Controller-->
+        <!--Charts View Controller-->
         <scene sceneID="Ran-e4-HDV">
             <objects>
-                <viewController id="ASC-al-2L0" customClass="AddExpenseViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Isd-wb-QOs" customClass="ADdex">
+                <viewController id="ASC-al-2L0" customClass="ChartsViewController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Isd-wb-QOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -171,7 +171,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add an expense"/>
                                 <connections>
-                                    <action selector="addExpenseTapped:" destination="ASC-al-2L0" eventType="touchUpInside" id="17h-3Y-DKa"/>
+                                    <action selector="addExpenseTapped:" destination="ASC-al-2L0" eventType="touchUpInside" id="m1b-70-sSH"/>
                                 </connections>
                             </button>
                         </barButtonItem>
