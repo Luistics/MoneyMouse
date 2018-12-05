@@ -53,21 +53,21 @@ class HomeTableViewController: UITableViewController {
         })
         
         
-        let budgetGoal = BudgetGoal(title:"Test Budget!",
-                                    totalAmount: 100,
-                                    currentAmount: 20,
-                                    category: "Travel",
-                                    addedByUser: "lao294@nyu.edu",
-                                    completed: false)
-        
-        let budgetGoal1 = BudgetGoal(title:"Test Budget 2!",
-                                    totalAmount: 20,
-                                    currentAmount: 3,
-                                    category: "Entertainment",
-                                    addedByUser: "lao@nyu.edu",
-                                    completed: false)
-        
-        testBudgets = [budgetGoal, budgetGoal1]
+//        let budgetGoal = BudgetGoal(title:"Test Budget!",
+//                                    totalAmount: 100,
+//                                    currentAmount: 20,
+//                                    category: "Travel",
+//                                    addedByUser: "lao294@nyu.edu",
+//                                    completed: false)
+//
+//        let budgetGoal1 = BudgetGoal(title:"Test Budget 2!",
+//                                    totalAmount: 20,
+//                                    currentAmount: 3,
+//                                    category: "Entertainment",
+//                                    addedByUser: "lao@nyu.edu",
+//                                    completed: false)
+//
+//        testBudgets = [budgetGoal, budgetGoal1]
 
     }
     
@@ -114,17 +114,29 @@ class HomeTableViewController: UITableViewController {
         
         cell.budgetRemaining?.text = "$" + String(format: "%.2f",remaining)
         
-        if(totalAmount - currentAmount < 0){
-            //bar color red
+        if(progress > 0.90){
+            cell.budgetProgress.progressTintColor = UIColor.flatRed()
         }
         
-        if(progress > 0.75){
-            //bar color yellow
+        if(progress > 0.75 && progress < 0.90){
+            cell.budgetProgress.progressTintColor = UIColor.flatYellow()
         }
         
         cell.budgetProgress.setProgress(progress, animated: true)
 
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            let budgetGoal = testBudgets[indexPath.section]
+            budgetGoal.ref?.removeValue()
+        }
     }
     
 

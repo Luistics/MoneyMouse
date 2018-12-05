@@ -27,10 +27,6 @@ class AddExpenseViewController: UIViewController {
         self.view.backgroundColor = UIColor.flatWhite()
         self.navigationController?.navigationBar.tintColor = UIColor.flatMint()
         
-        
-        
-        
-        
         // Do any additional setup after loading the view.
     }
     
@@ -73,7 +69,11 @@ class AddExpenseViewController: UIViewController {
                 expenseRef.setValue(expenseData.toAnyObject())
             }
             else{
-                //show alert controller, that budget doesn't exist
+                let alert = UIAlertController(title: "Oops!", message: "You currently do not have a budget called " + budgetTitle!, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("User tapped ok")
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
         })
 

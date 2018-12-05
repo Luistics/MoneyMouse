@@ -65,23 +65,36 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         //Todo: Add alert controller to ask user if they are sure, if yes,
         //then segue into the home view.
         
+        let alert = UIAlertController(title: "New Budget!", message: "Are you sure you want to add this budget goal?", preferredStyle: .alert)
         
-        guard let text = budgetAmount.text, let number = Float(text) else {
-            return
-        }
         
-        let budgetTitle = self.budgetTitle.text
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Yes!", comment: "Add to db, segue into home."), style: .default, handler: { _ in
+            guard let text = self.budgetAmount.text, let number = Float(text) else {
+                return
+            }
+            
+            let budgetTitle = self.budgetTitle.text
+            let budgetGoal = BudgetGoal(title:budgetTitle!,
+                                        totalAmount: number,
+                                        currentAmount: 0,
+                                        category: self.budgetLabel.text!,
+                                        addedByUser: self.userEmail!,
+                                        completed: false)
+            
+            let budgetRef = self.ref.child(self.userID).child(budgetTitle!.lowercased())
+            budgetRef.setValue(budgetGoal.toAnyObject())
+            
+            self.navigationController?.popViewController(animated: true)
+        }))
         
-        let budgetGoal = BudgetGoal(title:budgetTitle!,
-                                    totalAmount: number,
-                                    currentAmount: 0,
-                                    category: budgetLabel.text!,
-                                    addedByUser: self.userEmail!,
-                                    completed: false)
         
-        let budgetRef = self.ref.child(self.userID).child(budgetTitle!.lowercased())
+        alert.addAction(UIAlertAction(title: NSLocalizedString("No.", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
         
-        budgetRef.setValue(budgetGoal.toAnyObject())
+        self.present(alert, animated: true, completion: nil)
+        
+       
     }
     
     func UpdateData(){
