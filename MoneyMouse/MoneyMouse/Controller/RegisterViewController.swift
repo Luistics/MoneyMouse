@@ -20,6 +20,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.flatBlue()
+        passwordField.layer.cornerRadius = 20
+        passwordField.layer.cornerRadius = 20
+        email.layer.cornerRadius = 20
         
     }
     

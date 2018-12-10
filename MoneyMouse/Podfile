@@ -12,6 +12,7 @@ target 'MoneyMouse' do
     pod 'Charts'
     pod 'ChameleonFramework'
     pod 'SwipeCellKit'
+    pod 'TransitionButton'
 
   target 'MoneyMouseTests' do
     inherit! :search_paths

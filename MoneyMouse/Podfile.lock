@@ -72,6 +72,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - SwipeCellKit (2.5.0)
+  - TransitionButton (0.5.2)
 
 DEPENDENCIES:
   - ChameleonFramework
@@ -80,6 +81,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - SwipeCellKit
+  - TransitionButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -98,6 +100,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SwipeCellKit
+    - TransitionButton
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -115,7 +118,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwipeCellKit: d8f2617538ce3021cb0a11d1b93856a06a2f2e20
+  TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
 
-PODFILE CHECKSUM: 0f9acf0b59d32b82d82b0e4bb4a4961f32ee6dd3
+PODFILE CHECKSUM: fd348ccc9888a237fb2219f3d21d1f71322c7b3d
 
 COCOAPODS: 1.5.3

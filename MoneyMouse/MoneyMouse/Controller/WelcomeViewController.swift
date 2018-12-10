@@ -22,6 +22,8 @@ class WelcomeViewController: UIViewController {
         self.view.backgroundColor = UIColor.flatBlueColorDark()
         self.navigationController?.navigationBar.barTintColor = UIColor.flatBlue()
         self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
+        loginButton.layer.cornerRadius = 20;
+        signUpButton.layer.cornerRadius = 20;
         
         // Do any additional setup after loading the view.
     }
