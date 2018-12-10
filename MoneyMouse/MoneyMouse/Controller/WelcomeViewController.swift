@@ -22,8 +22,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatBlueColorDark()
-        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlueColorDark()
+//        self.navigationController?.navigationBar.tintColor = UIColor.flatMint()self.view.backgroundColor = UIColor.flatPowderBlueColorDark()
         
         self.view.addSubview(loginButton)
         self.view.addSubview(signUpButton)

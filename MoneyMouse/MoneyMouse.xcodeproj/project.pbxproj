@@ -33,6 +33,7 @@
 		DEF7A42921B705F800FEFD66 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */; };
 		DEF7A42D21B7064700FEFD66 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */; };
 		DEF7A42F21B708BC00FEFD66 /* ExpenseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42E21B708BC00FEFD66 /* ExpenseEntry.swift */; };
+		DEF9297B21BEE16C0084FD4C /* Mouse60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = DEF9297921BEE16C0084FD4C /* Mouse60x60.png */; };
 		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		DEF7A42E21B708BC00FEFD66 /* ExpenseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntry.swift; sourceTree = "<group>"; };
+		DEF9297921BEE16C0084FD4C /* Mouse60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mouse60x60.png; sourceTree = "<group>"; };
 		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 				DE85D33C21B7649D005791D7 /* Money_Mouse_Add_Budgeting_Goal_Icon.png */,
 				DE85D33B21B7649C005791D7 /* Money_Mouse_Charts_Icon.png */,
 				DE85D33D21B7649D005791D7 /* Money_Mouse_Home_Icon.png */,
+				DEF9297921BEE16C0084FD4C /* Mouse60x60.png */,
 				DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */,
 				DE0CF52621AE2FF600C249B7 /* Info.plist */,
 				DE85D33921B757C6005791D7 /* Logo.png */,
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE85D33F21B7649D005791D7 /* Money_Mouse_Add_Budgeting_Goal_Icon.png in Resources */,
+				DEF9297B21BEE16C0084FD4C /* Mouse60x60.png in Resources */,
 				DE0CF52521AE2FF600C249B7 /* LaunchScreen.storyboard in Resources */,
 				DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */,
 				DE85D33A21B757C6005791D7 /* Logo.png in Resources */,

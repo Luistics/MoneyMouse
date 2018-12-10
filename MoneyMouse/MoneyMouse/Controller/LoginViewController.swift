@@ -20,7 +20,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.flatBlue()
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlueColorDark()
+        //        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
         self.view.addSubview(loginButton)
         
         

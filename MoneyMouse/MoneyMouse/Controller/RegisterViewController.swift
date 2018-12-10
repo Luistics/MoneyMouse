@@ -22,7 +22,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.flatBlue()
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlueColorDark()
+        //        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
+ 
         passwordField.layer.cornerRadius = 40
         passwordField.layer.cornerRadius = 40
         email.layer.cornerRadius = 40

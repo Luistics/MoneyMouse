@@ -28,13 +28,7 @@ class AddExpenseViewController: UIViewController {
         self.budgetTitleEntered.text = "" 
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.flatBlue()
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.flatMint();
-        
-        
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.flatMint()
+        self.navigationController?.navigationBar.tintColor = UIColor.flatMint(); self.navigationController?.navigationBar.tintColor = UIColor.flatMint()
         
         // Do any additional setup after loading the view.
     }
