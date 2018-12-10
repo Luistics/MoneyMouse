@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		374DEEBEFFB81DF2D62D923D /* Pods_MoneyMouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */; };
+		594A2E9621BEC92300608B42 /* TransitionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594A2E9321BEC90B00608B42 /* TransitionButton.framework */; };
+		594A2E9721BEC92300608B42 /* TransitionButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 594A2E9321BEC90B00608B42 /* TransitionButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003821AE3B8100FF3383 /* LoginViewController.swift */; };
 		59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */; };
 		93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */; };
@@ -51,11 +53,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		594A2E9821BEC92300608B42 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				594A2E9721BEC92300608B42 /* TransitionButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04460D74FFF6F1198B449ECF /* Pods-MoneyMouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseUITests/Pods-MoneyMouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		152C9144FE2B00142E0B6B30 /* Pods-MoneyMouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouse/Pods-MoneyMouse.release.xcconfig"; sourceTree = "<group>"; };
 		15A61A979ED3EC945481281F /* Pods-MoneyMouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyMouseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyMouseTests/Pods-MoneyMouseTests.release.xcconfig"; sourceTree = "<group>"; };
 		3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		594A2E9321BEC90B00608B42 /* TransitionButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionButton.framework; path = Carthage/Build/iOS/TransitionButton.framework; sourceTree = "<group>"; };
+		595D419721B74C5B008451BB /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		59C3D3EA21B48BC600DF51FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59D1003821AE3B8100FF3383 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B2B81DC9E41D9E477B2EDB /* Pods_MoneyMouse.framework in Frameworks */,
+				594A2E9621BEC92300608B42 /* TransitionButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595D419921B74C61008451BB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				595D419721B74C5B008451BB /* Logo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		59D1003A21AE3BEE00FF3383 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +188,7 @@
 		DDE2D1A31833B2FFAED48690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				594A2E9321BEC90B00608B42 /* TransitionButton.framework */,
 				3602C3AE190F111541BCD555 /* Pods_MoneyMouse.framework */,
 				F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */,
 				6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */,
@@ -197,6 +225,7 @@
 				DE6F4D9621B48DF9009CC536 /* Models */,
 				59D1003B21AE3C1600FF3383 /* View */,
 				59D1003A21AE3BEE00FF3383 /* Controller */,
+				595D419921B74C61008451BB /* Image */,
 				DE0CF52121AE2FF600C249B7 /* Assets.xcassets */,
 				DE85D33C21B7649D005791D7 /* Money_Mouse_Add_Budgeting_Goal_Icon.png */,
 				DE85D33B21B7649C005791D7 /* Money_Mouse_Charts_Icon.png */,
@@ -256,6 +285,7 @@
 				DE0CF51121AE2FF500C249B7 /* Frameworks */,
 				DE0CF51221AE2FF500C249B7 /* Resources */,
 				91BB06B78F6C22D7D35D9392 /* [CP] Embed Pods Frameworks */,
+				594A2E9821BEC92300608B42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,6 +467,8 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -448,6 +480,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -673,6 +707,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoneyMouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,6 +729,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoneyMouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
