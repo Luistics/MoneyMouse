@@ -9,20 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import TransitionButton
 
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var passwordCheckField: UITextField!
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var registerButton: TransitionButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.flatBlue()
-        passwordField.layer.cornerRadius = 20
-        passwordField.layer.cornerRadius = 20
-        email.layer.cornerRadius = 20
+        passwordField.layer.cornerRadius = 40
+        passwordField.layer.cornerRadius = 40
+        email.layer.cornerRadius = 40
+        registerButton.layer.cornerRadius = 20
+        registerButton.spinnerColor = .white
+        registerButton.addTarget(self, action: #selector(signUpAction(_:)), for: .touchUpInside)
         
     }
     

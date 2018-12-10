@@ -24,6 +24,8 @@ class AddExpenseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.amountSpent.text = ""
+        self.budgetTitleEntered.text = "" 
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.flatBlue()
@@ -58,6 +60,7 @@ class AddExpenseViewController: UIViewController {
         let now = df.string(from: Date())
         let expenseRef = self.ref.child(self.userID).child(budgetTitleLower!).child(now)
         let budgetsRef = Database.database().reference(withPath:"budgets/" + String(userID));
+        
         
         
         //search through the budgets database for an entry that corresponds to user input title
