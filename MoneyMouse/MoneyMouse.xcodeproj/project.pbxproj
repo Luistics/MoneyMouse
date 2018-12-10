@@ -28,7 +28,6 @@
 		DE85D34021B7649D005791D7 /* Money_Mouse_Home_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE85D33D21B7649D005791D7 /* Money_Mouse_Home_Icon.png */; };
 		DE85D34421B76D54005791D7 /* ChartsPrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE85D34321B76D54005791D7 /* ChartsPrimeViewController.swift */; };
 		DEEAD22E21B5ED1B0009E941 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */; };
-		DEF7A42921B705F800FEFD66 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */; };
 		DEF7A42D21B7064700FEFD66 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */; };
 		DEF7A42F21B708BC00FEFD66 /* ExpenseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A42E21B708BC00FEFD66 /* ExpenseEntry.swift */; };
 		F17AAEB629B60E0E7576CE9B /* Pods_MoneyMouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF971226C2F641E6171A888 /* Pods_MoneyMouseUITests.framework */; };
@@ -86,7 +85,6 @@
 		DE85D33D21B7649D005791D7 /* Money_Mouse_Home_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Money_Mouse_Home_Icon.png; sourceTree = "<group>"; };
 		DE85D34321B76D54005791D7 /* ChartsPrimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsPrimeViewController.swift; sourceTree = "<group>"; };
 		DEEAD22D21B5ED1B0009E941 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		DEF7A42E21B708BC00FEFD66 /* ExpenseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntry.swift; sourceTree = "<group>"; };
 		F1C845DD892F6CE41193EBC7 /* Pods_MoneyMouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyMouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +123,6 @@
 			children = (
 				DE85D34321B76D54005791D7 /* ChartsPrimeViewController.swift */,
 				DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */,
-				DEF7A42821B705F800FEFD66 /* ChartsViewController.swift */,
 				DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
 				DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
 				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
@@ -489,7 +486,6 @@
 				59D1003921AE3B8100FF3383 /* LoginViewController.swift in Sources */,
 				59D1003D21AE3C6F00FF3383 /* RegisterViewController.swift in Sources */,
 				DE85D34421B76D54005791D7 /* ChartsPrimeViewController.swift in Sources */,
-				DEF7A42921B705F800FEFD66 /* ChartsViewController.swift in Sources */,
 				DE0CF52021AE2FF500C249B7 /* MoneyMouse.xcdatamodeld in Sources */,
 				DEF7A42F21B708BC00FEFD66 /* ExpenseEntry.swift in Sources */,
 				DE093A4021B5B93C004DC1AC /* HomeTableViewController.swift in Sources */,
