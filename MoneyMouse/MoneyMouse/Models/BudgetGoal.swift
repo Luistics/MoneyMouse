@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
+//defines a model for a budget goal
 struct BudgetGoal {
     
     let ref: DatabaseReference?

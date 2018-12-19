@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -175,12 +175,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfq-GR-pex">
-                                            <rect key="frame" x="305" y="3" width="70" height="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Budget" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfq-GR-pex">
+                                            <rect key="frame" x="288" y="3" width="79" height="12"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="xCB-TI-XcE"/>
+                                                <constraint firstAttribute="width" constant="79" id="xCB-TI-XcE"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -191,21 +191,21 @@
                                             </constraints>
                                             <color key="progressTintColor" red="0.59531047579436758" green="1" blue="0.8626095825531257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </progressView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-ej-Qzq">
-                                            <rect key="frame" x="207" y="3" width="70" height="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money spent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fg-Ny-a8B">
+                                            <rect key="frame" x="100" y="3" width="83" height="11"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="1ZM-mS-5Co"/>
+                                                <constraint firstAttribute="width" constant="83" id="sCP-JF-XMb"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fg-Ny-a8B">
-                                            <rect key="frame" x="115" y="3" width="70" height="11"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-ej-Qzq">
+                                            <rect key="frame" x="185" y="3" width="87" height="12"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="sCP-JF-XMb"/>
+                                                <constraint firstAttribute="width" constant="87" id="1ZM-mS-5Co"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -226,9 +226,9 @@
                                         <constraint firstItem="9Fg-Ny-a8B" firstAttribute="firstBaseline" secondItem="Rfq-GR-pex" secondAttribute="firstBaseline" id="dYd-Fo-UNr"/>
                                         <constraint firstItem="b0U-ej-Qzq" firstAttribute="firstBaseline" secondItem="9Fg-Ny-a8B" secondAttribute="firstBaseline" id="deM-EK-KVz"/>
                                         <constraint firstItem="Rfq-GR-pex" firstAttribute="centerY" secondItem="Uof-nw-XTo" secondAttribute="centerY" id="euP-b3-mtn"/>
-                                        <constraint firstItem="b0U-ej-Qzq" firstAttribute="leading" secondItem="9Fg-Ny-a8B" secondAttribute="trailing" constant="22" id="ix3-l9-NvL"/>
-                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="trailing" secondItem="Rfq-GR-pex" secondAttribute="trailing" constant="-16" id="k53-4j-fLo"/>
-                                        <constraint firstItem="9Fg-Ny-a8B" firstAttribute="centerX" secondItem="Uof-nw-XTo" secondAttribute="centerX" constant="-37.5" id="lF6-Mx-HhA"/>
+                                        <constraint firstItem="b0U-ej-Qzq" firstAttribute="leading" secondItem="9Fg-Ny-a8B" secondAttribute="trailing" constant="2" id="ix3-l9-NvL"/>
+                                        <constraint firstItem="Joc-5A-UXI" firstAttribute="trailing" secondItem="Rfq-GR-pex" secondAttribute="trailing" constant="-8" id="k53-4j-fLo"/>
+                                        <constraint firstItem="9Fg-Ny-a8B" firstAttribute="centerX" secondItem="Uof-nw-XTo" secondAttribute="centerX" constant="-46" id="lF6-Mx-HhA"/>
                                         <constraint firstItem="Joc-5A-UXI" firstAttribute="leading" secondItem="Uof-nw-XTo" secondAttribute="leading" id="pYd-YT-EJI"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -278,7 +278,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hy9-yh-aUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5319" y="-631"/>
+            <point key="canvasLocation" x="5317.6000000000004" y="-631.0344827586207"/>
         </scene>
         <!--Add Expense View Controller-->
         <scene sceneID="ef2-R0-IkS">
@@ -651,6 +651,6 @@
         <image name="Money_Mouse_Logo_Sans_White" width="1018" height="690"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eV5-iJ-Nxg"/>
+        <segue reference="ASn-zp-EkL"/>
     </inferredMetricsTieBreakers>
 </document>

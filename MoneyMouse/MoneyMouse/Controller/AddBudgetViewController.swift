@@ -2,7 +2,7 @@
 //  AddBudgetViewController.swift
 //  MoneyMouse
 //
-//  Created by Luis Olivar on 12/2/18.
+//  Created by Luis Olivar, Eisen Huang, Tom Fogle on 12/2/18.
 //  Copyright © 2018 edu.nyu. All rights reserved.
 //
 
@@ -43,6 +43,7 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
             print(snapshot.value as Any)
         })
         */
+        
         // Do any additional setup after loading the view.
         budgetPicker.delegate = self;
         budgetPicker.dataSource = self;
@@ -52,6 +53,7 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         return 1
     }
     
+    //Setup for the picker view for categories.
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return budgetGoalArray.count;
     }
@@ -66,92 +68,90 @@ class AddBudgetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     @IBAction func addBudgetPressed(_ sender: Any) {
         
-        //Todo: Add alert controller to ask user if they are sure, if yes,
-        //then segue into the home view.
-    
-        
+        //Guard the amount to cast into a Float.
         let budgetTitle = self.budgetTitle.text
         guard let text = self.budgetAmount.text, let number = Float(text) else {
             return
         }
         
-        
-        let testSnapshot = self.ref.child(self.userID)
-        testSnapshot.observeSingleEvent(of:.value, with: { snapshot in
-            
-            if(snapshot.hasChild(budgetTitle!.lowercased())){
-                self.addBudgetButton.startAnimation()
-                let alert = UIAlertController(title: "Oops!", message: "That budget already exists.", preferredStyle: .alert)
-                self.addBudgetButton.stopAnimation(animationStyle: .shake, revertAfterDelay: 1, completion: nil)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                    NSLog("User tapped ok")
-                }))
-                self.present(alert, animated: true, completion: nil)
+        //MARK- Error Check for negative numbers
+        if(number <= Float(0.0)){
+            let alert = UIAlertController(title: "Oops!", message: "You entered a negative number.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("User tapped ok")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            //get the snapshot of the database to check if the budget entered already exists.
+            let testSnapshot = self.ref.child(self.userID)
+            testSnapshot.observeSingleEvent(of:.value, with: { snapshot in
                 
-            }
-            
-            else{
-                
-                let alert = UIAlertController(title: "New Budget!", message: "Are you sure you want to add this budget goal?", preferredStyle: .alert)
-                
-                
-                alert.addAction(UIAlertAction(title: NSLocalizedString("Yes!", comment: "Add to db, segue into home."), style: .default, handler: { _ in
-                    
+                //if the budget exists, let the user know, and exit the action.
+                if(snapshot.hasChild(budgetTitle!.lowercased())){
                     self.addBudgetButton.startAnimation()
+                    let alert = UIAlertController(title: "Oops!", message: "That budget already exists.", preferredStyle: .alert)
+                    self.addBudgetButton.stopAnimation(animationStyle: .shake, revertAfterDelay: 1, completion: nil)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("User tapped ok")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                     
-                    let budgetGoal = BudgetGoal(title:budgetTitle!,
-                                                totalAmount: number,
-                                                currentAmount: 0,
-                                                category: self.budgetLabel.text!,
-                                                addedByUser: self.userEmail!,
-                                                completed: false)
+                }
                     
-                    let budgetRef = self.ref.child(self.userID).child(budgetTitle!.lowercased())
-                    budgetRef.setValue(budgetGoal.toAnyObject())
+                    //if the budget did not exist, ask user if they are sure. Add if so.
+                else{
+                    
+                    let alert = UIAlertController(title: "New Budget!", message: "Are you sure you want to add this budget goal?", preferredStyle: .alert)
                     
                     
-                    let qualityOfServiceClass = DispatchQoS.QoSClass.background
-                    let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
-                    backgroundQueue.async(execute: {
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("Yes!", comment: "Add to db, segue into home."), style: .default, handler: { _ in
+                        //MARK- Start Animation
+                        self.addBudgetButton.startAnimation()
                         
-                        DispatchQueue.main.async(execute: { () -> Void in
-                            // 4: Stop the animation, here you have three options for the `animationStyle` property:
-                            // .expand: useful when the task has been compeletd successfully and you want to expand the button and transit to another view controller in the completion callback
-                            // .shake: when you want to reflect to the user that the task did not complete successfly
-                            // .normal
-                            self.addBudgetButton.stopAnimation(animationStyle: .expand, completion: {
-                                self.navigationController?.popViewController(animated: true)
+                        //Create a new BudgetGoal object
+                        let budgetGoal = BudgetGoal(title:budgetTitle!,
+                                                    totalAmount: number,
+                                                    currentAmount: 0,
+                                                    category: self.budgetLabel.text!,
+                                                    addedByUser: self.userEmail!,
+                                                    completed: false)
+                        
+                        //Add this new object to the database.
+                        let budgetRef = self.ref.child(self.userID).child(budgetTitle!.lowercased())
+                        budgetRef.setValue(budgetGoal.toAnyObject())
+                        
+                        
+                        let qualityOfServiceClass = DispatchQoS.QoSClass.background
+                        let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
+                        backgroundQueue.async(execute: {
+                            //Create a queue and stop animation after the background work
+                            DispatchQueue.main.async(execute: { () -> Void in
+                                // 4: Stop the animation
+                                self.addBudgetButton.stopAnimation(animationStyle: .expand, completion: {
+                                    self.navigationController?.popViewController(animated: true)
+                                })
                             })
                         })
-                    })
-                }))
-                
-                
-                alert.addAction(UIAlertAction(title: NSLocalizedString("No.", comment: "Default action"), style: .default, handler: { _ in
-                    NSLog("The \"OK\" alert occured.")
-                }))
-                
-                self.present(alert, animated: true, completion: nil)
-                
-                
-            }
-        })
+                    }))
+                    
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("No.", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("The \"OK\" alert occured.")
+                    }))
+                    
+                    self.present(alert, animated: true, completion: nil)
+                    
+                }
+            })
+        }
+        
+        
        
        
     }
-    
+    //MARK- Update Data
     func UpdateData(){
         budgetLabel.text = budgetSelected;
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

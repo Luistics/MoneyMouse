@@ -150,11 +150,11 @@
 		59D1003A21AE3BEE00FF3383 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
 				DE85D34321B76D54005791D7 /* ChartsPrimeViewController.swift */,
 				DEF7A42C21B7064700FEFD66 /* AddExpenseViewController.swift */,
 				DE093A3F21B5B93C004DC1AC /* HomeTableViewController.swift */,
 				DE6F4D9421B488AD009CC536 /* AddBudgetViewController.swift */,
-				DE0CF51721AE2FF500C249B7 /* AppDelegate.swift */,
 				DE0CF51921AE2FF500C249B7 /* WelcomeViewController.swift */,
 				59D1003C21AE3C6F00FF3383 /* RegisterViewController.swift */,
 				59D1003821AE3B8100FF3383 /* LoginViewController.swift */,

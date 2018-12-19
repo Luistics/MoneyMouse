@@ -21,16 +21,18 @@ public class BarChartFormatter: NSObject, IAxisValueFormatter
     }
 }
 
+//MARK- Charts Class
 class ChartsPrimeViewController: UIViewController {
 
-    
+    //MARK- Instantiate 3 demo views of charts. The Interface builder was running into naming convention
+    // problems, so I used three generic names. Doug == BarChartView.
     @IBOutlet weak var doug2: BarChartView!
     @IBOutlet weak var doug: BarChartView!
-    
     @IBOutlet weak var doug3: BarChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // test data
         let days = ["Monday", "Tuesday", "Wednesday", "Thursday",
                     "Friday",
                     "Saturday","Sunday"]
@@ -52,6 +54,7 @@ class ChartsPrimeViewController: UIViewController {
         
         var count = 0.0
         
+        //format the axis data into readable Strings for BarChart
         for i in 0..<data.count{
             
             count+=1.0
@@ -72,6 +75,7 @@ class ChartsPrimeViewController: UIViewController {
         doug.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
     }
     
+    //Replica setChart
     func setFirstChart(data: [String], values:[Double]) {
         
         let formato:BarChartFormatter = BarChartFormatter()
@@ -101,6 +105,7 @@ class ChartsPrimeViewController: UIViewController {
         doug2.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
     }
     
+    //Replica of setChart
     func setThirdChart(data: [String], values:[Double]) {
         
         let formato:BarChartFormatter = BarChartFormatter()
@@ -130,20 +135,10 @@ class ChartsPrimeViewController: UIViewController {
         doug3.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
     }
     
+    //Segue into addExpenseViewController
     @IBAction func addTouched(_ sender: Any) {
         performSegue(withIdentifier: "chartsToAddExpense", sender: self)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
 
 }

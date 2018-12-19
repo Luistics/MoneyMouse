@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  MoneyMouse
 //
-//  Created by Luis Olivar on 11/28/18.
+//  Created by Luis Olivar, Eisen Huang, Tom Fogle on 11/28/18.
 //  Copyright © 2018 edu.nyu. All rights reserved.
 //
 
@@ -26,20 +26,20 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = 20;
         loginButton.spinnerColor = .white
         loginButton.addTarget(self, action: #selector(loginAction(_:)), for: .touchUpInside)
-       
-//
-
-        // Do any additional setup after loading the view.
     }
     
-    
+//MARK- Login
     @IBAction func loginAction(_ sender: Any) {
+        //Start the Animation
         loginButton.startAnimation()
+        
+        // 1: Make a queue to hold processes, then when it's empty, stop animation.
         let qualityOfServiceClass = DispatchQoS.QoSClass.background
         let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
+        // 2: Dispatch queue
         backgroundQueue.async(execute: {
             
-            // 3: Do your networking task or background work here.
+            // 3: Do the networking task or background work here.
             Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
                 if error != nil{
                     self.loginButton.stopAnimation(animationStyle: .shake, revertAfterDelay: 0.5, completion: nil)
@@ -53,11 +53,9 @@ class LoginViewController: UIViewController {
                 }
                 else{
                     DispatchQueue.main.async(execute: { () -> Void in
-                        // 4: Stop the animation, here you have three options for the `animationStyle` property:
-                        // .expand: useful when the task has been compeletd successfully and you want to expand the button and transit to another view controller in the completion callback
-                        // .shake: when you want to reflect to the user that the task did not complete successfly
-                        // .normal
+                        // 4: Stop the animation here
                         self.loginButton.stopAnimation(animationStyle: .expand, completion: {
+                            // 5: segue into home controller
                             self.performSegue(withIdentifier: "loginToHome", sender: self)
                         })
                     })

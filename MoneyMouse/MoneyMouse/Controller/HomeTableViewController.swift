@@ -2,7 +2,7 @@
 //  HomeTableViewController.swift
 //  MoneyMouse
 //
-//  Created by Luis Olivar on 12/3/18.
+// Created by Luis Olivar on 12/3/18.
 //  Copyright © 2018 edu.nyu. All rights reserved.
 //
 
@@ -13,6 +13,7 @@ import Charts
 import ChameleonFramework
 import SwipeCellKit
 
+//MARK- TableViewCell class for templating cells in the table view
 class BudgetProgressTableViewCell: UITableViewCell{
     
     @IBOutlet weak var budgetTotalAmount: UILabel!
@@ -25,6 +26,7 @@ class BudgetProgressTableViewCell: UITableViewCell{
 
 class HomeTableViewController: UITableViewController {
 
+    //define table properties
     var testBudgets = [BudgetGoal]()
     let cellSpacingHeight : CGFloat = 10
     
@@ -37,7 +39,7 @@ class HomeTableViewController: UITableViewController {
         
         
         let ref = Database.database().reference(withPath:"budgets/" + String(userID));
-        
+        //MARK- Observe data in Firebase and add into an array of BudgetGoals. Load the tableview with this found data.
         ref.observe(.value, with: { snapshot in
             var newItems: [BudgetGoal] = []
             
@@ -51,26 +53,10 @@ class HomeTableViewController: UITableViewController {
             self.testBudgets = newItems
             self.tableView.reloadData()
         })
-        
-        
-//        let budgetGoal = BudgetGoal(title:"Test Budget!",
-//                                    totalAmount: 100,
-//                                    currentAmount: 20,
-//                                    category: "Travel",
-//                                    addedByUser: "lao294@nyu.edu",
-//                                    completed: false)
-//
-//        let budgetGoal1 = BudgetGoal(title:"Test Budget 2!",
-//                                    totalAmount: 20,
-//                                    currentAmount: 3,
-//                                    category: "Entertainment",
-//                                    addedByUser: "lao@nyu.edu",
-//                                    completed: false)
-//
-//        testBudgets = [budgetGoal, budgetGoal1]
 
     }
     
+    //MARK- Format dates incoming from Database.
     func stripTime(from originalDate: Date) -> Date {
         let components = Calendar.current.dateComponents([.year, .month, .day], from: originalDate)
         let date = Calendar.current.date(from: components)
@@ -95,7 +81,7 @@ class HomeTableViewController: UITableViewController {
         return 1
     }
 
-    
+    //Define the way that the cells are filled, given data from the Database.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "budgetProgressCell", for: indexPath) as! BudgetProgressTableViewCell
         
@@ -103,20 +89,21 @@ class HomeTableViewController: UITableViewController {
         
         let totalAmount = testBudgets[indexPath.section].totalAmount
         
-        cell.budgetTotalAmount?.text = "$" + String(format: "%.2f",totalAmount)
+        cell.budgetTotalAmount?.text = "Total: $" + String(format: "%.2f",totalAmount)
         
         let currentAmount = testBudgets[indexPath.section].currentAmount
         
-        cell.budgetCurrentAmount?.text = "$" + String(format: "%.2f",currentAmount)
+        cell.budgetCurrentAmount?.text = "Spent: $" + String(format: "%.2f",currentAmount)
         
         let progress = currentAmount/totalAmount
         
         let remaining = totalAmount - currentAmount
         
-        cell.budgetRemaining?.text = "$" + String(format: "%.2f",remaining)
+        cell.budgetRemaining?.text = "Left: $" + String(format: "%.2f",remaining)
         
-        print(progress)
+        //print(progress)
         
+        //Define colors for different progress states.
         if(progress >= 0.75 && progress <= 0.90){
             cell.budgetProgress.progressTintColor = UIColor.flatYellow()
         }
@@ -134,6 +121,7 @@ class HomeTableViewController: UITableViewController {
         return true
     }
     
+    //Swipe to delete a budget.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             let budgetGoal = testBudgets[indexPath.section]
@@ -141,49 +129,12 @@ class HomeTableViewController: UITableViewController {
         }
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-    
-
     //IBAction functions for button presses
     
     @IBAction func addBudgetTapped(_ sender: Any) {
         performSegue(withIdentifier: "addBudgetGoal", sender: self)
     }
-    
+    //MARK- Sign Out
     @IBAction func signOutAction(_ sender: Any) {
         do {
             try Auth.auth().signOut()
