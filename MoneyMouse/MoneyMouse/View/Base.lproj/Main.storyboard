@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0a-4B-Mpm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -309,20 +309,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-K7-trO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-K7-trO" customClass="TransitionButton" customModule="TransitionButton">
                                 <rect key="frame" x="48" y="323" width="278" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Expense!"/>
-                                <connections>
-                                    <action selector="addExpenseButtonTapped:" destination="bc1-Jl-tha" eventType="touchUpInside" id="baq-vg-f1c"/>
-                                </connections>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="F8T-qx-28c"/>
                     </view>
                     <connections>
+                        <outlet property="addExpenseButton" destination="Z3D-K7-trO" id="UqS-0p-deT"/>
                         <outlet property="amountSpent" destination="HFj-iE-eq1" id="wJt-jt-W5M"/>
                         <outlet property="budgetTitleEntered" destination="73T-Io-o4q" id="thE-bx-qST"/>
                     </connections>
@@ -378,7 +381,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-aa-Hqi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-aa-Hqi" customClass="TransitionButton" customModule="TransitionButton">
                                 <rect key="frame" x="48" y="363" width="278" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -386,6 +389,11 @@
                                 <state key="normal" title="Add Budget Goal!">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="addBudgetPressed:" destination="1PS-Ds-Gzf" eventType="touchUpInside" id="wLR-S0-ZFk"/>
                                 </connections>
@@ -395,6 +403,7 @@
                         <viewLayoutGuide key="safeArea" id="O3H-AU-7Ok"/>
                     </view>
                     <connections>
+                        <outlet property="addBudgetButton" destination="xYL-aa-Hqi" id="46U-1L-0CM"/>
                         <outlet property="budgetAmount" destination="VCh-pI-YCG" id="Nhw-fP-cyU"/>
                         <outlet property="budgetLabel" destination="d1d-h9-aEi" id="Voo-aA-6FO"/>
                         <outlet property="budgetPicker" destination="hRY-qw-tle" id="XGw-NM-sma"/>
@@ -490,8 +499,11 @@
         <scene sceneID="eDp-X7-ife">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YDA-Az-rVb" customClass="BudgetGoalNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="Home-Icon-60x60" id="tAP-1k-NwS">
+                    <tabBarItem key="tabBarItem" image="Home-Icon-60x60" id="tAP-1k-NwS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <inset key="largeContentSizeImageInsets" minX="-1" minY="1" maxX="0.0" maxY="28"/>
+                        <connections>
+                            <outlet property="animation" destination="6oF-gy-L2q" id="qHy-a4-WDc"/>
+                        </connections>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xhb-B2-QmU">
@@ -504,6 +516,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04p-kv-FGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="6oF-gy-L2q" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="4380" y="-631"/>
         </scene>
@@ -608,9 +621,12 @@
         <!--Prime Navigation Controller-->
         <scene sceneID="gXn-Je-ppb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GLf-uB-gkx" customClass="PrimeNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Charts-Icon-40x40" id="Q3A-8i-wck">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GLf-uB-gkx" customClass="PrimeNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Charts-Icon-40x40" id="Q3A-8i-wck" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                        <connections>
+                            <outlet property="animation" destination="PZH-GP-f0v" id="s4R-80-JKR"/>
+                        </connections>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pVK-D5-LrL">
@@ -623,6 +639,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8s-Rv-6gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="PZH-GP-f0v" userLabel="Bounce2" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="4380" y="169"/>
         </scene>

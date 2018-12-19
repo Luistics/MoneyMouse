@@ -21,10 +21,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlueColorDark()
-//        self.navigationController?.navigationBar.tintColor = UIColor.flatMint()self.view.backgroundColor = UIColor.flatPowderBlueColorDark()
-        
         self.view.addSubview(loginButton)
         self.view.addSubview(signUpButton)
         loginButton.addTarget(self, action: #selector(logInAction(_:)), for: .touchUpInside)
