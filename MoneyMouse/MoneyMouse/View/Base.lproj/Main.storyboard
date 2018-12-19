@@ -499,8 +499,11 @@
         <scene sceneID="eDp-X7-ife">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YDA-Az-rVb" customClass="BudgetGoalNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="Home-Icon-60x60" id="tAP-1k-NwS">
+                    <tabBarItem key="tabBarItem" image="Home-Icon-60x60" id="tAP-1k-NwS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <inset key="largeContentSizeImageInsets" minX="-1" minY="1" maxX="0.0" maxY="28"/>
+                        <connections>
+                            <outlet property="animation" destination="6oF-gy-L2q" id="qHy-a4-WDc"/>
+                        </connections>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xhb-B2-QmU">
@@ -513,6 +516,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04p-kv-FGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="6oF-gy-L2q" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="4380" y="-631"/>
         </scene>
@@ -617,9 +621,12 @@
         <!--Prime Navigation Controller-->
         <scene sceneID="gXn-Je-ppb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GLf-uB-gkx" customClass="PrimeNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Charts-Icon-40x40" id="Q3A-8i-wck">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GLf-uB-gkx" customClass="PrimeNavigationController" customModule="MoneyMouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Charts-Icon-40x40" id="Q3A-8i-wck" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                        <connections>
+                            <outlet property="animation" destination="PZH-GP-f0v" id="s4R-80-JKR"/>
+                        </connections>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pVK-D5-LrL">
@@ -632,6 +639,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8s-Rv-6gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="PZH-GP-f0v" userLabel="Bounce2" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="4380" y="169"/>
         </scene>
